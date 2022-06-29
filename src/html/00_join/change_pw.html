@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        @@include('../../htmlPartials/_main_head.html', {
+            "headTitle": "BLUE BUDDY : 비밀번호 변경"
+        })
+
+    </head>
+    <body>
+
+        <div class="app">
+            <div class="center-block w-xxl w-auto-xs p-y-md">
+                <div class="p-a-md box-color r box-shadow-z1 text-color m-a">
+                    <div class="m-b">
+                        비밀번호 변경
+                        <p class="text-xs m-t">비밀번호는 영어(대소문자), 숫자, 특수문자를 포함한 10~30자 이내로 입력하여야 합니다.</p>
+                    </div>
+                    <form name="reset">
+                        <div class="md-form-group">
+                            <input type="password" class="md-input" required>
+                            <label>변경 비밀번호</label>
+                        </div>
+                        <div class="md-form-group">
+                            <input type="password" class="md-input" required>
+                            <label>비밀번호 확인</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block p-x-md">비밀번호 변경</button>
+                    </form>
+                </div>
+                <p id="alerts-container"></p>
+                <div class="p-v-lg text-center"><a ui-sref="access.signin" href=""
+                        class="text-primary _600">로그인</a> 페이지로 돌아가기</div>
+            </div>
+        </div>
+        
+
+        @@include('../../htmlPartials/_main_footer.html')
+
+    </body>
+</html> 

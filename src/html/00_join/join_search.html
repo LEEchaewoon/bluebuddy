@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        @@include('../../htmlPartials/_head.html', {
+            "headTitle": "BLUE BUDDY : 정비소 찾기"
+        })
+
+    </head>
+    <body>
+        <link rel="stylesheet" href="../../css/join.css">
+        <div class="join_container">
+            <div class="join_wrap">
+                <div class="join_header">
+                    <div class="logo_area">
+                        <img src="../../images/bb_logo.svg" alt="BLUE BUDDY">
+                    </div>
+                </div>
+                
+                <h1 class="join_title">정비소 찾기</h1>
+
+                <div class="join_form">
+                    <div class="row_group">
+                        <div class="join_row">
+                            <div class="form-outline">
+                                <input
+                                  class="form-control"
+                                  id="formControlReadonly"
+                                  type="text"
+                                  placeholder="사업자 등록번호를 입력해주세요."
+                                  aria-label="readonly input example"
+                                />
+                                <label class="form-label" for="formControlReadonly">사업자 등록번호로 찾기</label>
+                                <button type="button" class="address_search_btn">조회</button>
+                              </div>
+                        </div>
+                        <div class="join_row">
+                            <div class="form-outline">
+                                <input
+                                  class="form-control"
+                                  id="formControlReadonly"
+                                  type="text"
+                                  placeholder="업체명을 입력해주세요."
+                                  aria-label="readonly input example"
+                                />
+                                <label class="form-label" for="formControlReadonly">업체명으로 찾기</label>
+                                <button type="button" class="address_search_btn">조회</button>
+                              </div>
+                        </div>
+                        <div class="join_row">
+                            <div class="form-outline">
+                                <select name="location" class="form-select">
+                                    <option value="">지역정보로 찾기</option>
+                                    <option value="">은평구</option>
+                                    <option value="">일산서구</option>
+                                </select>
+                                <button type="button" class="address_search_btn">조회</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        @@include('../../htmlPartials/_footer.html')
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="../../js/join.js"></script>
+    </body>
+</html>

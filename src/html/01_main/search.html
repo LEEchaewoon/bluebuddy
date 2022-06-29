@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        @@include('../../htmlPartials/_main_head.html', {
+            "headTitle": "BLUE BUDDY : 정비소 찾기"
+        })
+
+    </head>
+    <body>
+
+        <link rel="stylesheet" href="../../css/mdb.custom.min.css">
+        <link rel="stylesheet" href="../../css/join.css">
+        
+        <div class="main_container">
+            @@include('../../htmlPartials/_sidebar_preview.html')
+
+            <div id="content" class="bb_content">
+                @@include('../../htmlPartials/_content_header.html', {
+                    "contentTitle": "정비소 찾기"
+                })
+
+                <div class="content_container">
+                    <div class="content_wrap_main">
+                        <div class="main_join_area">
+                            <div class="join_form">
+                                <div class="row_group">
+                                    <div class="join_row">
+                                        <div class="form-outline">
+                                            <input
+                                              class="form-control"
+                                              id="formControlReadonly"
+                                              type="text"
+                                              placeholder="사업자 등록번호를 입력해주세요."
+                                              aria-label="readonly input example"
+                                            />
+                                            <label class="form-label" for="formControlReadonly">사업자 등록번호로 찾기</label>
+                                            <button type="button" class="address_search_btn">조회</button>
+                                          </div>
+                                    </div>
+                                    <div class="join_row">
+                                        <div class="form-outline">
+                                            <input
+                                              class="form-control"
+                                              id="formControlReadonly"
+                                              type="text"
+                                              placeholder="업체명을 입력해주세요."
+                                              aria-label="readonly input example"
+                                            />
+                                            <label class="form-label" for="formControlReadonly">업체명으로 찾기</label>
+                                            <button type="button" class="address_search_btn">조회</button>
+                                          </div>
+                                    </div>
+                                    <div class="join_row">
+                                        <div class="form-outline">
+                                            <select name="location" class="form-select">
+                                                <option value="">지역정보로 찾기</option>
+                                                <option value="">은평구</option>
+                                                <option value="">일산서구</option>
+                                            </select>
+                                            <button type="button" class="address_search_btn">조회</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_wrap_sub">
+                        <!-- active 클래스 추가 시 오픈 -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../../js/mdb.custom.min.js"></script>
+        @@include('../../htmlPartials/_main_footer.html')
+
+        <script>
+            $('.nav_list .nav_item').eq(1).addClass('active');
+        </script>
+    </body>
+</html> 

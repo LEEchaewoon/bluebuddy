@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        @@include('../../htmlPartials/_main_head.html', {
+            "headTitle": "BLUE BUDDY : 커뮤니티"
+        })
+
+    </head>
+    <body>
+        
+        <link rel="stylesheet" href="../../css/community.css">
+        
+        <div class="main_container">
+            @@include('../../htmlPartials/_sidebar.html')
+            
+
+            <div id="content" class="bb_content">
+                @@include('../../htmlPartials/_content_header.html', {
+                    "contentTitle": "새 게시글 작성"
+                })
+
+                <div class="content_container">
+                    <div class="content_wrap_main">
+                        <!-- <div class="write_info_area">
+                            <div class="write_info_box">
+                                <span class="write_info_title">
+                                    유형
+                                </span>
+                                <span class="write_info">
+                                    <select class="form-control form-control-sm">
+                                        <option>자유 게시판</option>
+                                        <option>질문 게시판</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="write_info_box">
+                                <span class="write_info_title">
+                                    작성자
+                                </span>
+                                <span class="write_info">
+                                    AA모터스 김블루
+                                </span>
+                            </div>
+                            <div class="write_info_box">
+                                <span class="write_info_title">
+                                    익명글 작성
+                                </span>
+                                <span class="write_info">
+                                    <label class="ui-switch m-t-xs m-r">
+                                        <input type="checkbox">
+                                        <i></i>
+                                    </label>
+                                </span>
+                            </div>
+                        </div> -->
+                        <div class="write_info_area">
+                            <div class="write_info_box">
+                                <span class="write_info_title">
+                                    작성자
+                                </span>
+                                <span class="write_info">
+                                    AA모터스 김블루
+                                </span>
+                            </div>
+                        </div>
+                        <div class="box m-b-md">
+                            <textarea class="form-control" rows="10" placeholder="명예훼손이나 상대방을 비방, 불쾌감을 주는 글, 욕설, 남을 모욕하는 글은 임의로 제재가 있을 수 있습니다."></textarea>
+                        </div>
+
+                        <div class="write_image_box">
+                            <div class="image_wrap">
+                                <img src="https://wallpaperaccess.com/full/1209274.jpg" alt="">
+                            </div>
+                            <div class="image_wrap">
+                                <img src="https://cdn.wallpapersafari.com/44/49/r3ECSw.jpg" alt="">
+                            </div>
+                            <div class="image_wrap">
+                                <img src="https://www.itl.cat/pngfile/big/2-21128_cat-cute-cats-pictures-hd.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <div class="form-file">
+                            <input type="file">
+                            <button class="btn white">이미지 업로드하기</button>
+                        </div>
+
+                        <span class="text-muted block m-b-lg m-t-sm">
+                            사진 첨부는 5MB 미만의 jpg, png 파일만 등록 가능하며, 최대 3개까지 등록 가능합니다.<br>
+                            개인정보 관련 피해 방지를 위해 이름, 연락처, 주소 등 개인정보가 노출되지 않도록 주의해주시기 바랍니다.
+                        </span>
+
+                        <!-- <form action="api/dropzone" class="dropzone white">
+                            <div class="dz-message" ui-jp="dropzone" ui-options="{ url: 'api/dropzone' }">
+                                <h4 class="m-t-lg m-b-md">파일을 드래그하거나 클릭하여 첨부할 수 있습니다.</h4>
+                                <span class="text-muted block m-b-lg">
+                                    사진 첨부는 5MB 미만의 jpg, png 파일만 등록 가능하며, 최대 3개까지 등록 가능합니다.<br>
+                                    개인정보 관련 피해 방지를 위해 이름, 연락처, 주소 등 개인정보가 노출되지 않도록 주의해주시기 바랍니다.
+                                </span>
+                            </div>
+                        </form> -->
+
+                        <div class="form-group row m-t-lg">
+                            <div class="col-sm-4 col-sm-offset-2">
+                              <button type="submit" class="btn white">취소</button>
+                              <button type="submit" class="btn btn-primary">게시글 등록</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_wrap_sub">
+                        <!-- active 클래스 추가 시 오픈 -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('../../htmlPartials/_main_footer.html')
+
+        <script>
+            $('.nav_list .nav_item').eq(4).addClass('active');
+        </script>
+    </body>
+</html> 

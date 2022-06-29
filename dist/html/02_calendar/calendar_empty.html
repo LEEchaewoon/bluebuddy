@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="Pragma" content="no-cache" />
+
+<!-- style -->
+<link rel="stylesheet" href="../../css/animate.css/animate.min.css" type="text/css" />
+<link rel="stylesheet" href="../../css/glyphicons/glyphicons.css" type="text/css" />
+<link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="../../css/material-design-icons/material-design-icons.css" type="text/css" />
+
+<link rel="stylesheet" href="../../css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+
+<link rel="stylesheet" href="../../css/app.css" type="text/css" />
+
+
+
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/main.css">
+
+
+<title>BLUE BUDDY : 정비 달력</title>
+
+
+    </head>
+    <body>
+        
+        <link rel="stylesheet" href="../../css/calendar.css">
+        
+        <div class="main_container">
+            <link rel="stylesheet" href="../../css/nav_side.css">
+
+<aside id="aside" class="bb_aside">
+    <div class="navside">
+        <div class="logo_area">
+            <a class="logo_link" href="">
+                <img src="../../images/bb_logo.svg" alt="BLUE BUDDY">
+            </a>
+        </div>
+        <nav class="nav_area">
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_home.svg" alt="홈">
+                        </i>
+                        <div class="nav_title">
+                            홈
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_calendar.svg" alt="정비 달력">
+                        </i>
+                        <div class="nav_title">
+                            정비 달력
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_history.svg" alt="정비 내역">
+                        </i>
+                        <div class="nav_title">
+                            정비 내역
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_myshop.svg" alt="내 정비소 관리">
+                        </i>
+                        <div class="nav_title">
+                            내 정비소 관리
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_community.svg" alt="커뮤니티">
+                        </i>
+                        <div class="nav_title">
+                            커뮤니티
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_user.svg" alt="내 정보 및 고객센터">
+                        </i>
+                        <div class="nav_title">
+                            내 정보 및 고객센터
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+            
+
+            <div id="content" class="bb_content">
+                <link rel="stylesheet" href="../../css/content_header.css">
+
+<div class="content_header">
+    <div class="navheader">
+        <div class="navheader_title">
+            정비 달력
+        </div>
+        <ul class="navheader_list">
+            <li class="navheader_item">
+                <a href="">
+                    <span id="user_name">김주형</span> 님 반가워요 ~
+                </a>
+            </li>
+            <li class="navheader_item">
+                <a href="">
+                    로그아웃
+                </a>
+            </li>
+            <li class="navheader_item">
+                <a href="">
+                    설정
+                </a>
+            </li>
+            <li class="navheader_item active" id="nav_notification">
+                <a href="">
+                    <i>
+                        <img src="../../images/icon_notification.svg" alt="알림">
+                    </i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+                <div class="content_container">
+                    <div class="content_wrap_main">
+                        <div id="calender">
+    <h2 id="calenderTitle">
+        <span href="#" style="cursor: pointer;"><i class="material-icons md-24">&#xe314;</i></span>
+        2022년 6월
+        <span style="cursor: pointer;"><i class="material-icons md-24">&#xe315;</i></span>
+    </h2>
+    <table class="table table-hover" style="border-collapse: separate; table-layout: fixed;">
+        <thead>
+            <tr>
+                <td class="calnederWeekTitle" style="border-bottom-width: 0px;">
+                    Mon
+                </td>
+                <td class="calnederWeekTitle" style="border-bottom-width: 0px;">
+                    Tue
+                </td>
+                <td class="calnederWeekTitle" style="border-bottom-width: 0px;">
+                    Wed
+                </td>
+                <td class="calnederWeekTitle" style="border-bottom-width: 0px;">
+                    Thu
+                </td>
+                <td class="calnederWeekTitle" style="border-bottom-width: 0px;">
+                    Fri
+                </td>
+                <td class="calnederWeekTitle" style="border-bottom-width: 0px;">
+                    Sat
+                </td>
+                <td class="calnederWeekTitle" style="border-bottom-width: 0px;">
+                    Sun
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="calenderLine">
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        1
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        2
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="reservationDay" style="color: rgb(69, 89, 151);">
+                        3
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        4
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(255, 83, 83);">
+                        5
+                    </div>
+                </td>
+            </tr>
+            <tr class="calenderLine">
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="focusDay" style="color: rgb(69, 89, 151);">
+                        6
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        7
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        8
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="reservationDay" style="color: rgb(69, 89, 151);">
+                        9
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        10
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        11
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="reservationDay" style="color: rgb(255, 83, 83);">
+                        12
+                    </div>
+                </td>
+            </tr>
+            <tr class="calenderLine">
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        13
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        14
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        15
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        16
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="todayFocus" style="color: rgb(69, 89, 151);">
+                        17
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        18
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(255, 83, 83);">
+                        19
+                    </div>
+                </td>
+            </tr>
+            <tr class="calenderLine">
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="reservationDay" style="color: rgb(69, 89, 151);">
+                        20
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        21
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="reservationDay" style="color: rgb(69, 89, 151);">
+                        22
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        23
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        24
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="reservationDay" style="color: rgb(69, 89, 151);">
+                        25
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(255, 83, 83);">
+                        26
+                    </div>
+                </td>
+            </tr>
+            <tr class="calenderLine">
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        27
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        28
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        29
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+                        30
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(69, 89, 151);">
+
+                    </div>
+                </td>
+                <td class="calenderDay" style="border-bottom-width: 0px; box-shadow: none;">
+                    <div class="" style="color: rgb(255, 83, 83);">
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+                        <div class="schedule_wrap">
+                            <div class="schedule_date_area">
+                                <div class="schedule_date">
+                                    2022-03-15 (월)
+                                </div>
+                                <div class="schedule_select">
+                                    <div class="btn-group dropdown">
+                                        <button class="btn white dropdown-toggle" data-toggle="dropdown">전체</button>
+                                        <div class="dropdown-menu dropdown-menu-scale pull-right">
+                                            <a class="dropdown-item" href>전체</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href>예약 완료</a>
+                                            <a class="dropdown-item" href>승인 대기</a>
+                                            <a class="dropdown-item" href>예약 취소</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list_empty">
+                                <img src="../../images/empty.svg" alt="">
+                                <div class="list_empty_text">
+                                    예정된 작업 스케줄이 없습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_wrap_sub">
+                        <!-- active 클래스 추가 시 오픈 -->
+                        <div class="content_sub_area">
+                            <button class="content_sub_btn">
+                                <i class="material-icons md-24">&#xe5c4;</i>
+                                닫기
+                            </button>
+                            <div class="schedule_sub_wrap">
+                                <div class="schedule_sub_top">
+                                    <div class="schedule_sub_user">
+                                        <div class="username">
+                                            홍길동
+                                        </div>
+                                        <div class="phonenumber">
+                                            010-1234-5678
+                                        </div>
+                                    </div>
+                                    <span class="schedule_label completion">예약 완료</span>
+                                </div>
+                                <div class="schedule_sub_info">
+                                    <ul class="info_list">
+                                        <li class="info_item">
+                                            <div class="info_title">
+                                                정비 차량
+                                            </div>
+                                            <div class="info_content">
+                                                2019 현대 싼타페 TM
+                                            </div>
+                                        </li>
+                                        <li class="info_item">
+                                            <div class="info_title">
+                                                예약 날짜
+                                            </div>
+                                            <div class="info_content">
+                                                2022-03-15 (월)
+                                            </div>
+                                        </li>
+                                        <li class="info_item">
+                                            <div class="info_title">
+                                                예약 시간
+                                            </div>
+                                            <div class="info_content">
+                                                14:00
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="repair_type type_breakdown">
+                                        <!-- type_breakdown , type_exchange toggleClass -->
+                                        <div class="breakdown">
+                                            <div class="info_item">
+                                                <div class="info_title">
+                                                    정비 유형
+                                                </div>
+                                                <div class="info_content">
+                                                    이상진단
+                                                </div>
+                                            </div>
+                                            <div class="info_item">
+                                                <div class="info_title">
+                                                    고객 요청사항
+                                                </div>
+                                            </div>
+                                            <div class="request_area">
+                                                <textarea class="form-control" rows="5" readonly>차가 휘발유로 가는지 엔진오일로 가는지 뭔 3000km 갈때마다 엔진오일이 부족하다고 보충하라고 경고등이 떠요. 오일 누수가 있는건지 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요 점검해주세요</textarea>
+                                                <ul class="request_img_list">
+                                                    <li class="request_img_item">
+                                                        <img src="https://wallpaperaccess.com/full/1209274.jpg" alt="">
+                                                    </li>
+                                                    <li class="request_img_item">
+                                                        <img src="https://cdn.wallpapersafari.com/44/49/r3ECSw.jpg" alt="">
+                                                    </li>
+                                                    <li class="request_img_item">
+                                                        <img src="https://www.itl.cat/pngfile/big/2-21128_cat-cute-cats-pictures-hd.jpg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="exchange">
+                                            <div class="info_item">
+                                                <div class="info_title">
+                                                    정비 유형
+                                                </div>
+                                                <div class="info_content">
+                                                    소모품 교환
+                                                </div>
+                                            </div>
+                                            <div class="info_item">
+                                                <div class="info_title">
+                                                    정비 항목
+                                                </div>
+                                                <div class="info_content">
+                                                    엔진오일 외 2종
+                                                </div>
+                                            </div>
+
+                                            <div class="category_area">
+                                                <ul class="category_list">
+                                                    <li class="category_item">타이어/휠</li>
+                                                    <li class="category_item">브레이크 패드</li>
+                                                    <li class="category_item">배터리</li>
+                                                    <li class="category_item">엔진오일</li>
+                                                    <li class="category_item">브레이크오일</li>
+                                                    <li class="category_item">필터류</li>
+                                                    <li class="category_item">냉각수/부동액</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop_caption_area active">
+                                        <div class="info_item">
+                                            <div class="info_title">
+                                                정비소 메모
+                                            </div>
+                                        </div>
+                                        <textarea class="form-control" rows="4" placeholder="메모할 내용을 입력해주세요."></textarea>
+                                        <div class="caption_save">
+                                            <button type="submit" class="btn btn-primary caption_save_btn">메모 저장</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop_check_area active">
+                                        <button type="submit" class="btn btn-primary">방문 확인</button>
+                                        <button type="submit" class="btn btn-primary">정비 명세서 등록</button>
+                                        <div class="shop_check_text">
+                                            정비명세서 등록시 자동으로 방문확인 처리 됩니다.
+                                        </div>
+                                    </div>
+
+                                    <div class="shop_cancel_area">
+                                        <button type="submit" class="btn btn-danger">작업 취소</button>
+                                        <textarea class="form-control" rows="2" placeholder="작업 취소 사유를 작성해주세요."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+<script src="../../js/jquery/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+  <script src="../../js/jquery/tether/dist/js/tether.min.js"></script>
+  <script src="../../js/jquery/bootstrap/dist/js/bootstrap.js"></script>
+<!-- core -->
+  <script src="../../js/jquery/underscore/underscore-min.js"></script>
+  <script src="../../js/jquery/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+  <script src="../../js/jquery/PACE/pace.min.js"></script>
+
+  <script src="../../js/scripts/config.lazyload.js"></script>
+
+  <script src="../../js/scripts/palette.js"></script>
+  <script src="../../js/scripts/ui-load.js"></script>
+  <script src="../../js/scripts/ui-jp.js"></script>
+  <script src="../../js/scripts/ui-include.js"></script>
+  <script src="../../js/scripts/ui-device.js"></script>
+  <script src="../../js/scripts/ui-form.js"></script>
+  <script src="../../js/scripts/ui-nav.js"></script>
+  <script src="../../js/scripts/ui-screenfull.js"></script>
+  <script src="../../js/scripts/ui-scroll-to.js"></script>
+  <script src="../../js/scripts/ui-toggle-class.js"></script>
+
+  <script src="../../js/scripts/app.js"></script>
+
+  <!-- ajax -->
+  <script src="../../js/jquery/jquery-pjax/jquery.pjax.js"></script>
+  <script src="../../js/scripts/ajax.js"></script>
+
+
+  <script src="../../js/common.js"></script>
+<!-- endbuild -->
+
+        <script>
+            $('.nav_list .nav_item').eq(1).addClass('active');
+        </script>
+    </body>
+</html> 

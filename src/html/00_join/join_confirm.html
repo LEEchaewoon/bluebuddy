@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        @@include('../../htmlPartials/_head.html', {
+            "headTitle": "BLUE BUDDY : 선택 정보 확인"
+        })
+
+    </head>
+    <body>
+        <link rel="stylesheet" href="../../css/join.css">
+        <div class="join_container">
+            <div class="join_wrap">
+                <div class="join_header">
+                    <div class="logo_area">
+                        <img src="../../images/bb_logo.svg" alt="BLUE BUDDY">
+                    </div>
+                </div>
+                
+                <h1 class="join_title">선택 정보 확인</h1>
+
+                <div class="join_form">
+                    
+                    <div class="row_group">
+                        <div class="join_row">
+                            <div class="form-outline">
+                                <input
+                                  class="form-control"
+                                  id="formControlReadonly"
+                                  type="text"
+                                  value="현대 블루핸즈 주안서부점"
+                                  aria-label="readonly input example"
+                                  readonly
+                                />
+                                <label class="form-label" for="formControlReadonly">업체명</label>
+                            </div>
+                        </div>
+                        <div class="join_row">
+                            <div class="form-outline">
+                                <input
+                                  class="form-control"
+                                  id="formControlReadonly"
+                                  type="text"
+                                  value="12345 경기도 수원시 팔달구 가다대로 1234-5"
+                                  aria-label="readonly input example"
+                                  readonly
+                                />
+                                <label class="form-label" for="formControlReadonly">업체 주소</label>
+                            </div>
+                        </div>
+                        <div class="join_row">
+                            <div class="form-outline">
+                                <input
+                                  class="form-control"
+                                  id="formControlReadonly"
+                                  type="text"
+                                  value="홍길동"
+                                  aria-label="readonly input example"
+                                  readonly
+                                />
+                                <label class="form-label" for="formControlReadonly">대표자명</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="join_btn_wrap btn_2">
+                        <button type="button" class="btn btn-light" data-mdb-ripple-color="dark">취소</button>
+                        <button type="button" class="btn btn-primary">정비소 등록</button>
+                    </div>
+
+                    <div class="confirm_caption">
+                        정비소 등록 시, 대표자 승인 후 서비스 이용이 가능합니다.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        @@include('../../htmlPartials/_footer.html')
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="../../js/join.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1186 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    @@include('../../htmlPartials/_main_head.html', {
+    "headTitle": "BLUE BUDDY : 내 정보 및 고객센터"
+    })
+
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="../../css/mypage.css">
+
+    <div class="main_container">
+        @@include('../../htmlPartials/_sidebar.html')
+
+        <div id="content" class="bb_content">
+            @@include('../../htmlPartials/_content_header.html', {
+            "contentTitle": "내 정보 및 고객센터"
+            })
+
+            <div class="content_container">
+                <div class="content_wrap_main">
+                    <div class="mypage_setting_wrap">
+                        <ul class="mypage_setting_list">
+                            <li class="nav-item">
+                                <a class="nav-link block active" href data-toggle="tab" data-target="#tab-1">
+                                    <div class="account_setting">
+                                        <div class="account_top">
+                                            <strong>홍길동</strong> 정비사님
+                                        </div>
+                                        <div class="account_bottom">
+                                            <div class="id naver">
+                                                <!-- 자체로그인 : bluebuddy / 구글 : gmail / 카카오 : kakao / 네이버 : naver / 페이스북 : facebook -->
+                                                hong1234@gmail.com
+                                            </div>
+                                            <span class="rating">
+                                                정비소 회원
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="promotion_area">
+                                <div class="swiper promotion_slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="" class="promotion_link">
+                                                <img src="../../images/event_01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="" class="promotion_link">
+                                                <img src="../../images/event_02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="" class="promotion_link">
+                                                <img src="../../images/event_03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="" class="promotion_link">
+                                                <img src="../../images/event_04.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="" class="promotion_link">
+                                                <img src="../../images/event_05.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <svg width="18" height="18" viewBox="0 0 18 18">
+                                            <circle cx="9" cy="9" r="9" fill="#143760"/>
+                                            <path d="M13886.7-1349.975l4.676-4.5-4.676-4.5-1.324,1.275,3.351,3.225-3.351,3.225Z" transform="translate(-13878.877 1363.475)" fill="#fff"/>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-button-prev">
+                                        <svg width="18" height="18" viewBox="0 0 18 18">
+                                            <g transform="translate(-13290 1442)">
+                                              <circle cx="9" cy="9" r="9" transform="translate(13290 -1442)" fill="#143760"/>
+                                              <path d="M13890.053-1349.975l-4.676-4.5,4.676-4.5,1.324,1.275-3.351,3.225,3.351,3.225Z" transform="translate(-589.877 -78.525)" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link block" href data-toggle="tab" data-target="#tab-2">
+                                    나의 문의 내역
+                                    <i class="material-icons md-24">&#xe315;</i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link block" href data-toggle="tab" data-target="#tab-3">
+                                    1:1 문의
+                                    <i class="material-icons md-24">&#xe315;</i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link block" href data-toggle="tab" data-target="#tab-4">
+                                    채팅 상담하기
+                                    <i class="material-icons md-24">&#xe315;</i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link block" href data-toggle="tab" data-target="#tab-5">
+                                    이벤트 및 공지사항
+                                    <i class="material-icons md-24">&#xe315;</i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link block" href data-toggle="tab" data-target="#tab-6">
+                                    FAQ
+                                    <i class="material-icons md-24">&#xe315;</i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link block" href data-toggle="tab" data-target="#tab-7">
+                                    서비스 약관
+                                    <i class="material-icons md-24">&#xe315;</i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="mypage_footer">
+                            <div class="mypage_footer_top">
+                                <div class="logo_area">
+                                    <img src="../../images/Hyundai_Motor_Group_CI.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="mypage_footer_bottom">
+                                <p>서울특별시 서초구 헌릉로 12</p>
+                                <p>고객센터. 031-999-9999 / Fax. 031-888-8888</p>
+                            </div>
+                            <div class="mypage_footer_copyright">
+                                © COPYRIGHT 2022 HYUNDAI MOTOR GROUP, ALL RIGHTS RESERVED.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_wrap_sub">
+                    <!-- active 클래스 추가 시 오픈 -->
+                    <div class="content_sub_area">
+                        <button class="content_sub_btn">
+                            <i class="material-icons md-24">&#xe5c4;</i>
+                            닫기
+                        </button>
+                        <div class="tab-content pos-rlt">
+                            <div class="tab-pane active" id="tab-1">
+                                <div id="account" class="tab-1-item">
+                                    <div class="setting_title">
+                                        내 계정 정보
+                                    </div>
+                                    <div class="setting_content">
+                                        <div class="account_item">
+                                            <div class="account_info">
+                                                <div class="account_title">
+                                                    이메일 아이디
+                                                </div>
+                                                <div class="account_content">
+                                                    hong1234@gmail.com
+                                                </div>
+                                            </div>
+                                            <!-- <img class="account_mail" src="../../images/google_icon.svg" alt=""> -->
+                                            <img class="account_mail" src="../../images/naver_icon.svg" alt="">
+                                            <!-- <img class="account_mail" src="../../images/kakao_icon.svg" alt=""> -->
+                                            <!-- <img class="account_mail" src="../../images/facebook_icon.svg" alt=""> -->
+                                            <!-- <img class="account_mail" src="../../images/bluebuddy_icon.svg" alt=""> -->
+                                        </div>
+                                        <div class="account_item">
+                                            <div class="account_info">
+                                                <div class="account_title">
+                                                    비밀번호
+                                                </div>
+                                                <div class="account_content">
+                                                    **********
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary" onclick="pwChange()">변경</button>
+                                        </div>
+                                        <div class="account_item">
+                                            <div class="account_info">
+                                                <div class="account_title">
+                                                    휴대 전화 번호
+                                                </div>
+                                                <div class="account_content">
+                                                    010-1234-5678
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary" onclick="phoneChange()">변경</button>
+                                        </div>
+                                        <div class="account_footer">
+                                            <a href="" class="logout">로그아웃</a>
+                                            <a class="delete" onclick="quit_1()">회원탈퇴</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="pw_phone" class="hide tab-1-item">
+                                    <div class="setting_title">
+                                        휴대폰 인증
+                                    </div>
+                                    <div class="setting_content">
+                                        <div class="account_item">
+                                            <div class="account_info">
+                                                <div class="account_title">
+                                                    휴대폰 번호
+                                                </div>
+                                                <div class="account_content">
+                                                    <input type="text" class="form-control">
+                                                    <button class="pw_phone_btn complete">인증완료</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="account_item">
+                                            <div class="account_info">
+                                                <div class="account_title">
+                                                    인증번호
+                                                </div>
+                                                <div class="account_content">
+                                                    <input type="text" class="form-control">
+                                                    <button class="pw_phone_btn">인증하기</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pw_change_btn">
+                                            <button type="submit" class="btn white" onclick="pwPhoneDone()">취소</button>
+                                            <button type="submit" class="btn btn-primary" onclick="pwPhoneDone()">비밀번호 변경</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="pw_change" class="hide tab-1-item">
+                                    <div class="setting_title">
+                                        비밀번호 변경
+                                    </div>
+                                    <div class="setting_content">
+                                        <div class="account_item">
+                                            <div class="account_info">
+                                                <div class="account_title">
+                                                    현재 비밀번호
+                                                </div>
+                                                <div class="account_content">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="account_item">
+                                            <div class="account_info">
+                                                <div class="account_title">
+                                                    변경 비밀번호
+                                                </div>
+                                                <div class="account_content">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="account_item">
+                                            <div class="account_info">
+                                                <div class="account_title">
+                                                    비밀번호 확인
+                                                </div>
+                                                <div class="account_content">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pw_change_caption">
+                                            비밀번호는 영어(대소문자), 숫자, 특수문자를 포함한 10~30자 이내로 입력하여야 합니다.
+                                        </div>
+                                        <div class="pw_change_btn">
+                                            <button type="submit" class="btn white" onclick="account()">취소</button>
+                                            <button type="submit" class="btn btn-primary" onclick="account()">비밀번호 변경</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="phone_change" class="hide tab-1-item">
+                                    <div class="setting_title">
+                                        휴대폰 번호 변경
+                                    </div>
+                                    <div class="setting_content">
+                                        <div class="account_item">
+                                            <div class="account_info">
+                                                <div class="account_title">
+                                                    휴대폰 번호
+                                                </div>
+                                                <div class="account_content">
+                                                    <input type="text" class="form-control">
+                                                    <button class="pw_phone_btn complete">인증완료</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="account_item">
+                                            <div class="account_info">
+                                                <div class="account_title">
+                                                    인증번호
+                                                </div>
+                                                <div class="account_content">
+                                                    <input type="text" class="form-control">
+                                                    <button class="pw_phone_btn">인증하기</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pw_change_btn">
+                                            <button type="submit" class="btn white" onclick="account()">취소</button>
+                                            <button type="submit" class="btn btn-primary" onclick="account()">휴대폰 번호 변경</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div id="quit_1" class="hide tab-1-item">
+                                    <div class="setting_title">
+                                        블루버디 서비스를 탈퇴하시겠어요?
+                                    </div>
+                                    <div class="setting_content">
+                                        <div class="quit_area">
+                                            <div class="quit_img_wrap">
+                                                <img src="../../images/quit.svg" alt="">
+                                            </div>
+                                            <div class="quit_subtitle">
+                                                그래도 탈퇴하시겠다면<br>
+                                                아래의 유의사항을 꼭 확인해주세요!
+                                            </div>
+                                            <div class="quit_text">
+                                                <p>
+                                                    블루버디 서비스를 탈퇴하는 경우,
+                                                    정비소 리뷰와 커뮤니티 작성글은 원칙적으로 삭제되지 않습니다.
+                                                </p>
+
+                                                <p>
+                                                    탈퇴 완료된 이메일 아이디는 재가입 방지 등을 위하여
+                                                    개인정보처리방침에 따라 개인정보는 탈퇴 후에도
+                                                    90일간 보관되며, 해당 기간 내 계정복구를 신청하실 수 있습니다.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pw_change_btn">
+                                            <button type="submit" class="btn white" onclick="quit_2()">탈퇴하기</button>
+                                            <button type="submit" class="btn btn-primary" onclick="account()">계속 이용하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div id="quit_2" class="hide tab-1-item">
+                                    <div class="setting_title">
+                                        회원님의 탈퇴 이유를 알려주세요.
+                                    </div>
+                                    <div class="setting_content">
+                                        <div class="quit_area">
+                                            <div class="quit_img_wrap">
+                                                <img src="../../images/quit.svg" alt="">
+                                            </div>
+                                            <div class="quit_subtitle">
+                                                고객님의 소중한 의견을 반영하여,<br>
+                                                더 나은 블루버디를 만들겠습니다.
+                                            </div>
+                                            <div class="quit_radio">
+                                                <p>
+                                                    <label class="md-check">
+                                                      <input type="radio" name="quit_radio" checked>
+                                                      <i class="blue"></i>
+                                                      자주 이용하지 않음
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label class="md-check">
+                                                      <input type="radio" name="quit_radio">
+                                                      <i class="blue"></i>
+                                                      주변 정비소 부족
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label class="md-check">
+                                                      <input type="radio" name="quit_radio">
+                                                      <i class="blue"></i>
+                                                      매칭 서비스 불만족
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label class="md-check">
+                                                      <input type="radio" name="quit_radio">
+                                                      <i class="blue"></i>
+                                                      정비 서비스 품질 불만족
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label class="md-check">
+                                                      <input type="radio" name="quit_radio">
+                                                      <i class="blue"></i>
+                                                      개인정보 등 보안 우려
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label class="md-check">
+                                                      <input type="radio" name="quit_radio">
+                                                      <i class="blue"></i>
+                                                      기타
+                                                    </label>
+
+                                                    <textarea class="form-control" rows="5" placeholder="탈퇴사유를 10자 이상 남겨주세요.&#13;&#10;서비스 개선을 위해 노력하겠습니다."></textarea>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pw_change_btn">
+                                            <button type="submit" class="btn white" onclick="quit_3()">탈퇴하기</button>
+                                            <button type="submit" class="btn btn-primary" onclick="account()">계속 이용하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div id="quit_3" class="hide tab-1-item">
+                                    <div class="setting_title">
+                                        회원 탈퇴가 완료되었습니다.
+                                    </div>
+                                    <div class="setting_content">
+                                        <div class="quit_area">
+                                            <div class="quit_subtitle">
+                                                더 나은 블루버디를 만들어<br>
+                                                다시 만날 수 있도록 기대하겠습니다.
+                                            </div>
+                                        </div>
+                                        <div class="pw_change_btn">
+                                            <button type="submit" class="btn btn-primary" onclick="account()">메인으로 이동</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-2">
+                                <div id="history" class="tab-2-item">
+                                    <div class="setting_title">
+                                        나의 1:1 문의 내역
+                                    </div>
+                                    <div class="setting_content nav-active-primary">
+                                        <ul class="history_tab_list">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href data-toggle="tab"
+                                                    data-target="#history_tab_1">전체</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href data-toggle="tab"
+                                                    data-target="#history_tab_2">답변대기</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href data-toggle="tab"
+                                                    data-target="#history_tab_3">답변완료</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content history_tab_content">
+                                            <div class="tab-pane history_list_area active" id="history_tab_1">
+                                                <div class="list_empty">
+                                                    <img src="../../images/empty.svg" alt="">
+                                                    <div class="list_empty_text">
+                                                        문의 내역이 없습니다.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane history_list_area" id="history_tab_2">
+                                                <div class="list-group">
+                                                    <a class="list-group-item justify-content-between" onclick="history_detail()">
+                                                        <div class="history_summary">
+                                                            <div class="history_summary_top">
+                                                                <div class="username">
+                                                                    홍길동
+                                                                </div>
+                                                                <div class="history_label">
+                                                                    답변대기
+                                                                </div>
+                                                            </div>
+                                                            <div class="history_summary_title">
+                                                                엔진오일 문의드립니다. 엔진오일 문의드립니다. 엔진오일 문의드립니다. 엔진오일 문의드립니다.
+                                                            </div>
+                                                        </div>
+                                                        <div class="history_date">
+                                                            오전 9:22
+                                                        </div>
+                                                    </a>
+                                                    <a class="list-group-item justify-content-between" onclick="history_detail()">
+                                                        <div class="history_summary">
+                                                            <div class="history_summary_top">
+                                                                <div class="username">
+                                                                    김블루
+                                                                </div>
+                                                                <div class="history_label">
+                                                                    답변대기
+                                                                </div>
+                                                            </div>
+                                                            <div class="history_summary_title">
+                                                                엔진오일 문의드립니다. 엔진오일 문의드립니다. 엔진오일 문의드립니다. 엔진오일 문의드립니다.
+                                                            </div>
+                                                        </div>
+                                                        <div class="history_date">
+                                                            오전 9:22
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane history_list_area" id="history_tab_3">
+                                                <div class="list-group">
+                                                    <a class="list-group-item justify-content-between" onclick="history_detail()">
+                                                        <div class="history_summary">
+                                                            <div class="history_summary_top">
+                                                                <div class="username">
+                                                                    홍길동
+                                                                </div>
+                                                                <div class="history_label complete">
+                                                                    답변완료
+                                                                </div>
+                                                            </div>
+                                                            <div class="history_summary_title">
+                                                                엔진오일 문의드립니다. 엔진오일 문의드립니다. 엔진오일 문의드립니다. 엔진오일 문의드립니다.
+                                                            </div>
+                                                        </div>
+                                                        <div class="history_date">
+                                                            오전 9:22
+                                                        </div>
+                                                    </a>
+                                                    <a class="list-group-item justify-content-between" onclick="history_detail()">
+                                                        <div class="history_summary">
+                                                            <div class="history_summary_top">
+                                                                <div class="username">
+                                                                    김블루
+                                                                </div>
+                                                                <div class="history_label complete">
+                                                                    답변완료
+                                                                </div>
+                                                            </div>
+                                                            <div class="history_summary_title">
+                                                                엔진오일 문의드립니다. 엔진오일 문의드립니다. 엔진오일 문의드립니다. 엔진오일 문의드립니다.
+                                                            </div>
+                                                        </div>
+                                                        <div class="history_date">
+                                                            오전 9:22
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="history_detail" class="hide tab-2-item">
+                                    <div class="setting_title">
+                                        나의 1:1 문의 내역
+                                    </div>
+                                    <div class="setting_content">
+
+                                        <div class="history_view">
+                                            <div class="history_view_wrap">
+                                                <div class="history_view_top">
+                                                    <div class="history_view_info">
+                                                        <div class="history_view_title">
+                                                            2022-05-12
+                                                        </div>
+                                                        <div class="history_view_number">
+                                                            2022051211945079
+                                                        </div>
+                                                    </div>
+                            
+                                                    <span class="history_view_label complete">
+                                                        답변 완료
+                                                    </span>
+                                                </div>
+                            
+                                                <div class="history_view_body">
+                                                    엔진오일 문의드립니다.<br>
+                                                    5W30 점도 차량에 5W40 넣어도 괜찮은가요?<br>
+                                                    매뉴얼엔 5W30 넣으라 하고 순정도 그건데<br>
+                                                    40 넣어도 상관없겠죠?<br>
+                                                    답변 부탁드려요
+                        
+                                                    <div class="history_view_img_area">
+                                                        <div class="image_wrap">
+                                                            <img src="https://wallpaperaccess.com/full/1209274.jpg" alt="">
+                                                        </div>
+                                                        <div class="image_wrap">
+                                                            <img src="https://cdn.wallpapersafari.com/44/49/r3ECSw.jpg" alt="">
+                                                        </div>
+                                                        <div class="image_wrap">
+                                                            <img src="https://www.itl.cat/pngfile/big/2-21128_cat-cute-cats-pictures-hd.jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="history_view_wrap">
+                                                <div class="history_view_top">
+                                                    <div class="history_view_info">
+                                                        <div class="history_view_title">
+                                                            A. 블루버디 고객센터
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="history_view_body">
+                                                    안녕하십니까. 고객님.<br>
+                                                    블루버디 고객센터 입니다.<br>
+                                                    항상 저희 블루버디를 이용해 주시는 고객님께 진심으로<br>
+                                                    감사드립니다.<br>
+                                                    <br>
+                                                    최근 문의급증으로 인해 답변 늦어진 점 대단히 죄송합니다.<br>
+                                                    <br>
+                                                    항상 이용해 주셔서 감사합니다.<br>
+                                                    <br>
+                                                    추가적인 문의사항이 있으신 경우,<br>
+                                                    블루버디 상담원채팅이나,<br>
+                                                    1:1문의를 다시 남겨주시면 확인 후 도움 드리겠습니다.
+                                                </div>
+                                            </div>
+                        
+                                        </div>
+                                        
+                                        <div class="pw_change_btn">
+                                            <button type="submit" class="btn btn-primary" onclick="history()">리스트로 돌아가기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-3">
+                                <div id="question">
+                                    <div class="setting_title">
+                                        1:1 문의하기
+                                    </div>
+                                    <div class="setting_content">
+                                        <div class="question_write">
+                                            <div class="info_item">
+                                                <div class="info_title">
+                                                    문의 유형
+                                                </div>
+                                                <div class="info_content">
+                                                    <select class="form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="info_item">
+                                                <div class="info_title">
+                                                    문의내용
+                                                </div>
+                                            </div>
+                                            <div class="question_write_text">
+                                                <textarea class="form-control" rows="5" placeholder="문의 내용을 입력해주세요."></textarea>
+                                            </div>
+                                            
+                                            <div class="info_item">
+                                                <div class="info_title">
+                                                    사진 첨부 (선택사항)
+                                                </div>
+                                            </div>
+                                            <div class="request_area">
+                                                <ul class="request_img_list">
+                                                    <li class="request_img_item">
+                                                        <img src="https://wallpaperaccess.com/full/1209274.jpg" alt="">
+                                                    </li>
+                                                    <li class="request_img_item">
+                                                        <img src="https://cdn.wallpapersafari.com/44/49/r3ECSw.jpg" alt="">
+                                                    </li>
+                                                    <li class="request_img_item">
+                                                        <img src="https://www.itl.cat/pngfile/big/2-21128_cat-cute-cats-pictures-hd.jpg" alt="">
+                                                    </li>
+                                                </ul>
+                                                <div class="form-file">
+                                                    <input type="file">
+                                                    <button class="btn white">이미지 업로드하기</button>
+                                                </div>
+                                                <div class="img_upload_caption">
+                                                    <p>사진 첨부는 5MB 미만의 jpg, png 파일만 최대 3개까지 등록 가능합니다.</p>
+                                                    <p>이름, 연락처, 주소 등 개인정보가 노출되지 않도록 주의해주시기 바랍니다.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="info_item">
+                                                <div class="info_title">
+                                                    답변알림
+                                                </div>
+                                                <div class="info_content">
+                                                    <div class="notification_item">
+                                                        <div class="notification_checkbox">
+                                                            <label class="ui-switch primary">
+                                                                <input type="checkbox">
+                                                                <i></i>
+                                                            </label>
+                                                            <div class="notification_name">
+                                                                문자/알림
+                                                            </div>
+                                                        </div>
+                                                        <div class="notification_text">
+                                                            <input type="text" class="form-control" placeholder="휴대폰 번호를 입력해주세요.">
+                                                        </div>
+                                                    </div>
+                                                    <div class="notification_item">
+                                                        <div class="notification_checkbox">
+                                                            <label class="ui-switch primary">
+                                                                <input type="checkbox">
+                                                                <i></i>
+                                                            </label>
+                                                            <div class="notification_name">
+                                                                이메일
+                                                            </div>
+                                                        </div>
+                                                        <div class="notification_text">
+                                                            <input type="text" class="form-control" placeholder="이메일 주소를 입력해주세요.">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="question_btn_area">
+                                                <button type="submit" class="btn white">취소</button>
+                                                <button type="submit" class="btn btn-primary">등록하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-4">
+                                <div id="chat">
+                                    <div class="setting_title">
+                                        채팅 상담하기
+                                    </div>
+                                    <div class="setting_content nav-active-primary">
+                                        <ul class="chat_tab_list">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href data-toggle="tab"
+                                                    data-target="#chat_tab_1">상담 중</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href data-toggle="tab"
+                                                    data-target="#chat_tab_2">상담 완료</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content chat_tab_content">
+                                            <div class="tab-pane chat_list_area active" id="chat_tab_1">
+                                                <div class="list_empty">
+                                                    <img src="../../images/chat_empty.svg" alt="">
+                                                    <div class="list_empty_text">
+                                                        진행 중인 채팅 상담이 없습니다.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane chat_list_area" id="chat_tab_2">
+                                                <div class="list inset box">
+                                                    <div class="list-item" onclick="chatOpen()">
+                                                        <div class="list-left">
+                                                            <span class="w-40 avatar">
+                                                                <img src="https://mblogthumb-phinf.pstatic.net/MjAxOTExMDJfMTcw/MDAxNTcyNjU2MTAwNTA4.SruwZSkNhkBdiZbfNnwbeNV-9RQ4o-Gf2puo1flc4FQg.yt0GO_zfexFai1xJiNZ-Qb1J2jRN6DwcnP-E4kgwwiYg.JPEG.youseok0/image_%281%29.jpg?type=w2">
+                                                                <i class="away b-white"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <div class="chat_content">
+                                                                <div class="_500">블루버디 고객센터</div>
+                                                                <small class="block">네 감사합니다 :) 실시간 채팅 상담 블루버디 고객센터입니다 네 감사합니다 :) 실시간 채팅 상담 블루버디 고객센터입니다</small>
+                                                            </div>
+                                                            <div class="chat_date">
+                                                                2022-09-22 오전 11:44
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-item" onclick="chatOpen()">
+                                                        <div class="list-left">
+                                                            <span class="w-40 avatar">
+                                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaA0bCKc2M0CQBvJeypHkFY_irWiPODDDx4A&usqp=CAU">
+                                                                <i class="away b-white"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <div class="chat_content">
+                                                                <div class="_500">블루버디 고객센터</div>
+                                                                <small class="block">네 감사합니다 :) 실시간 채팅 상담 블루버디 고객센터입니다 네 감사합니다 :) 실시간 채팅 상담 블루버디 고객센터입니다</small>
+                                                            </div>
+                                                            <div class="chat_date">
+                                                                2022-09-22 오전 11:44
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="chat_view" class="hide">
+                                    <div class="setting_title">
+                                        채팅 상담하기
+                                    </div>
+                                    <div class="setting_content">
+                                        <div class="box row-col" style="min-height:450px">
+                                            <div class="box-header b-a">
+                                                <strong>블루버디 고객센터</strong>
+                                            </div>
+                                            <div class="row-row dker">
+                                                <div class="row-body">
+                                                    <div class="row-inner">
+                                                        <div class="p-a-md">
+                                                            <div class="m-b">
+                                                                <div class="clear">
+                                                                    <div>
+                                                                        <div class="p-a p-y-sm dark-white inline r">
+                                                                            안녕하세요 블루버디 고객센터입니다. 무엇을 도와드릴까요?
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="m-t-xs">
+                                                                        <div class="p-a p-y-sm dark-white inline r">
+                                                                            무엇을? 도와드릴까요
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="text-muted text-xs m-t-xs"><i
+                                                                            class="fa fa-ok text-success"></i> 2022년 06월 21일</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="m-b">
+                                                                <div class="clear text-right">
+                                                                    <div class="p-a p-y-sm info inline text-left r">
+                                                                        도와주세요
+                                                                    </div>
+                                                                    <div class="text-muted text-xs m-t-xs">5분 전
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="m-b">
+                                                                <div class="clear">
+                                                                    <div class="p-a p-y-sm dark-white inline r">
+                                                                        무엇을 도와드릴까요?
+                                                                    </div>
+                                                                    <div class="text-muted text-xs m-t-xs"><i
+                                                                            class="fa fa-ok text-success"></i>4분 전</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="m-b">
+                                                                <div class="clear text-right">
+                                                                    <div>
+                                                                        <div class="p-a p-y-sm info inline text-left r">
+                                                                            도와주세요 도와주세요 점검해주세요 점검해주세요
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="m-t-xs">
+                                                                        <div class="p-a p-y-sm info inline text-left r">
+                                                                            빨리요
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="text-muted text-xs m-t-xs">방금 전 보냄
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-footer b-a">
+                                                <form>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="문의하실 내용을 입력하세요.">
+                                                        <span class="input-group-btn">
+                                                            <button class="btn white b-a no-shadow"
+                                                                type="button">전송</button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn white" onclick="chatClose()">리스트로 돌아가기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-5">
+                                <div id="notice" class="tab-5-item">
+                                    <div class="setting_title">
+                                        이벤트 및 공지사항
+                                    </div>
+                                    <div class="setting_content nav-active-primary">
+                                        <ul class="notice_tab_list">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href data-toggle="tab"
+                                                    data-target="#notice_tab_1">공지사항</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href data-toggle="tab"
+                                                    data-target="#notice_tab_2">이벤트</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content notice_tab_content">
+                                            <div class="tab-pane notice_list_area active" id="notice_tab_1">
+                                                <div class="list_empty">
+                                                    <img src="../../images/notice_empty.svg" alt="">
+                                                    <div class="list_empty_text">
+                                                        공지사항이 없습니다.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane notice_list_area" id="notice_tab_2">
+                                                <div class="list_empty">
+                                                    <img src="../../images/event_empty.svg" alt="">
+                                                    <div class="list_empty_text">
+                                                        이벤트가 없습니다.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="notice_detail" class="hide tab-5-item">
+                                    <div class="setting_title">
+                                        공지사항
+                                    </div>
+                                    <div class="setting_content">
+                                        <div class="notice_view">
+                                            <div class="notice_view_wrap">
+                                                <div class="notice_view_top">
+                                                    <div class="notice_view_info">
+                                                        <div class="notice_view_date">
+                                                            2022-05-12
+                                                        </div>
+                                                    </div>
+                                                    <div class="notice_view_title">
+                                                        [공지사항] 비수도권 블루버디 서비스 정비소 추가 계획 안내
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="notice_view_body">
+                                                    안녕하세요. 비수도권에서도 블루버디 서비스가 시작되어<br>
+                                                    아래와 같이 안내 드립니다.<br>
+                                                    <br>
+                                                    1. 비수도권 정비소 추가 시작일<br>
+                                                        2023년 1월 1일 부터<br>
+                                                        <br>
+                                                    2. 증설 확정 정비소 리스트<br>
+                                                    이후 2차 증설을 통해 지속적으로 확대할 예정입니다.<br>
+                                                    <br>
+                                                    <br>
+                                                    감사합니다.끝.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pw_change_btn">
+                                            <button type="submit" class="btn btn-primary" onclick="notice()">리스트로 돌아가기</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="event_detail" class="hide tab-5-item">
+                                    <div class="setting_title">
+                                        이벤트
+                                    </div>
+                                    <div class="setting_content">
+                                        <div class="event_view">
+                                            <div class="event_header">
+                                                <img src="../../images/event_01.jpg" alt="">
+                                            </div>
+                                            <div class="event_img_area">
+                                                <img src="../../images/event_content.jpg" alt="">
+                                            </div>
+                                            <div class="event_text">
+                                                이벤트 텍스트 영역
+                                            </div>
+                                        </div>
+                                        <div class="pw_change_btn">
+                                            <button type="submit" class="btn btn-primary" onclick="notice()">리스트로 돌아가기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-6">
+                                <div id="faq">
+                                    <div class="setting_title">
+                                        FAQ
+                                    </div>
+                                    <div class="setting_content">
+                                        <div class="faq_list" id="accordion_a">
+                                            <div class="faq_title">
+                                                회원 문의
+                                            </div>
+                                            <div class="panel box">
+                                                <div class="box-header">
+                                                    <i class="material-icons md-24 pull-right">&#xe5c5;</i>
+                                                    <a class="faq_link" data-toggle="collapse"
+                                                        data-parent="#accordion_a" data-target="#a_1">
+                                                        <span class="q_mark">Q</span>가입자와 차량 소유자가 꼭 같아야 하나요?
+                                                    </a>
+                                                </div>
+                                                <div id="a_1" class="collapse">
+                                                    <div class="box-body">
+                                                        <p class="text-sm text-muted"><span
+                                                                class="text-md pull-left w-32 m-r rounded info">A</span>
+                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                                                            Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                                            craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                                            you probably haven't heard of them accusamus labore
+                                                            sustainable VHS.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel box">
+                                                <div class="box-header">
+                                                    <i class="material-icons md-24 pull-right">&#xe5c5;</i>
+                                                    <a class="faq_link" data-toggle="collapse"
+                                                        data-parent="#accordion_a" data-target="#a_2">
+                                                        <span class="q_mark">Q</span>아이디와 비밀번호가 기억이 나지 않아요
+                                                    </a>
+                                                </div>
+                                                <div id="a_2" class="collapse">
+                                                    <div class="box-body">
+                                                        <span
+                                                            class="text-md pull-left w-32 m-r rounded warning">A</span>
+                                                        <p class="text-sm text-muted clear">Anim pariatur cliche
+                                                            reprehenderit, enim eiusmod high life accusamus terry
+                                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                            skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                                            eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                                            on it squid single-origin coffee nulla assumenda shoreditch
+                                                            et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                                            anderson cred nesciunt sapiente ea proident. Ad vegan
+                                                            excepteur butcher vice lomo. Leggings occaecat craft beer
+                                                            farm-to-table, raw denim aesthetic synth nesciunt you
+                                                            probably haven't heard of them accusamus labore sustainable
+                                                            VHS.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="faq_list" id="accordion_b">
+                                            <div class="faq_title">
+                                                예약 문의
+                                            </div>
+                                            <div class="panel box">
+                                                <div class="box-header">
+                                                    <i class="material-icons md-24 pull-right">&#xe5c5;</i>
+                                                    <a class="faq_link" data-toggle="collapse"
+                                                        data-parent="#accordion_b" data-target="#b_1">
+                                                        <span class="q_mark">Q</span>가입자와 차량 소유자가 꼭 같아야 하나요?
+                                                    </a>
+                                                </div>
+                                                <div id="b_1" class="collapse">
+                                                    <div class="box-body">
+                                                        <p class="text-sm text-muted"><span
+                                                                class="text-md pull-left w-32 m-r rounded info">A</span>
+                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                                                            Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                                            craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                                            you probably haven't heard of them accusamus labore
+                                                            sustainable VHS.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel box">
+                                                <div class="box-header">
+                                                    <i class="material-icons md-24 pull-right">&#xe5c5;</i>
+                                                    <a class="faq_link" data-toggle="collapse"
+                                                        data-parent="#accordion_b" data-target="#b_2">
+                                                        <span class="q_mark">Q</span>아이디와 비밀번호가 기억이 나지 않아요
+                                                    </a>
+                                                </div>
+                                                <div id="b_2" class="collapse">
+                                                    <div class="box-body">
+                                                        <span
+                                                            class="text-md pull-left w-32 m-r rounded warning">A</span>
+                                                        <p class="text-sm text-muted clear">Anim pariatur cliche
+                                                            reprehenderit, enim eiusmod high life accusamus terry
+                                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                            skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                                            eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                                            on it squid single-origin coffee nulla assumenda shoreditch
+                                                            et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                                            anderson cred nesciunt sapiente ea proident. Ad vegan
+                                                            excepteur butcher vice lomo. Leggings occaecat craft beer
+                                                            farm-to-table, raw denim aesthetic synth nesciunt you
+                                                            probably haven't heard of them accusamus labore sustainable
+                                                            VHS.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-7">
+                                <div id="terms">
+                                    <div class="setting_title">
+                                        서비스 약관
+                                    </div>
+                                    <div class="setting_content">
+                                        <div class="terms_list" id="accordion_terms">
+                                            <div class="terms_box">
+                                                <a class="terms_header" data-toggle="collapse" data-parent="#accordion_terms" data-target="#terms_1">
+                                                    사업자 정보 확인
+                                                    <i class="material-icons md-24">&#xe315;</i>
+                                                </a>
+                                                <div id="terms_1" class="collapse terms_body">
+                                                    약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용
+                                                </div>
+                                            </div>
+                                            <div class="terms_box">
+                                                <a class="terms_header" data-toggle="collapse" data-parent="#accordion_terms" data-target="#terms_2">
+                                                    블루버디 이용약관
+                                                    <i class="material-icons md-24">&#xe315;</i>
+                                                </a>
+                                                <div id="terms_2" class="collapse terms_body">
+                                                    약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용
+                                                </div>
+                                            </div>
+                                            <div class="terms_box">
+                                                <a class="terms_header" data-toggle="collapse" data-parent="#accordion_terms" data-target="#terms_3">
+                                                    위치기반 서비스 이용약관
+                                                    <i class="material-icons md-24">&#xe315;</i>
+                                                </a>
+                                                <div id="terms_3" class="collapse terms_body">
+                                                    약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용
+                                                </div>
+                                            </div>
+                                            <div class="terms_box">
+                                                <a class="terms_header" data-toggle="collapse" data-parent="#accordion_terms" data-target="#terms_4">
+                                                    개인정보 처리방침
+                                                    <i class="material-icons md-24">&#xe315;</i>
+                                                </a>
+                                                <div id="terms_4" class="collapse terms_body">
+                                                    약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용 약관내용
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('../../htmlPartials/_main_footer.html')
+
+    <script>
+        $('.nav_list .nav_item').eq(5).addClass('active');
+    </script>
+
+    <link rel="stylesheet" href="../../css/swiper-bundle.css">
+    <script src="../../js/swiper-bundle.js"></script>
+
+    <script>
+        // promotion slider
+
+
+        var swiper = new Swiper(".promotion_slider", {
+            slidesPerView: 1,
+            loop: true,
+            speed: 600,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

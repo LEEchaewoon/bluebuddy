@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="Pragma" content="no-cache" />
+
+<!-- style -->
+<link rel="stylesheet" href="../../css/animate.css/animate.min.css" type="text/css" />
+<link rel="stylesheet" href="../../css/glyphicons/glyphicons.css" type="text/css" />
+<link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="../../css/material-design-icons/material-design-icons.css" type="text/css" />
+
+<link rel="stylesheet" href="../../css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+
+<link rel="stylesheet" href="../../css/app.css" type="text/css" />
+
+
+
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/main.css">
+
+
+<title>BLUE BUDDY : 내 정비소 관리</title>
+
+
+</head>
+
+<body>
+
+
+    <div id="m-sm" class="modal" data-backdrop="true">
+        <div class="row-col h-v">
+            <div class="row-cell v-m">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">정비소 권한 관리</h5>
+                        </div>
+                        <div class="modal-body text-center p-lg">
+                            <p>김정비 님을 정비사로 등록하시겠습니까?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn dark-white p-x-md" data-dismiss="modal">취소</button>
+                            <button type="button" class="btn primary p-x-md" data-dismiss="modal">적용</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="m-review_delete" class="modal" data-backdrop="true">
+        <div class="row-col h-v">
+            <div class="row-cell v-m">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">삭제 요청이 완료되었습니다.</h5>
+                        </div>
+                        <div class="modal-body text-center p-lg">
+                            <p>리뷰 삭제요청은 블루버디 관리자 검토 후 처리되며, 삭제요청이 거절될 수 있습니다.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn primary p-x-md" data-dismiss="modal">확인</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="../../css/myshop.css">
+
+    <div class="main_container">
+        <link rel="stylesheet" href="../../css/nav_side.css">
+
+<aside id="aside" class="bb_aside">
+    <div class="navside">
+        <div class="logo_area">
+            <a class="logo_link" href="">
+                <img src="../../images/bb_logo.svg" alt="BLUE BUDDY">
+            </a>
+        </div>
+        <nav class="nav_area">
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_home.svg" alt="홈">
+                        </i>
+                        <div class="nav_title">
+                            홈
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_calendar.svg" alt="정비 달력">
+                        </i>
+                        <div class="nav_title">
+                            정비 달력
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_history.svg" alt="정비 내역">
+                        </i>
+                        <div class="nav_title">
+                            정비 내역
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_myshop.svg" alt="내 정비소 관리">
+                        </i>
+                        <div class="nav_title">
+                            내 정비소 관리
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_community.svg" alt="커뮤니티">
+                        </i>
+                        <div class="nav_title">
+                            커뮤니티
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_user.svg" alt="내 정보 및 고객센터">
+                        </i>
+                        <div class="nav_title">
+                            내 정보 및 고객센터
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+        <div id="content" class="bb_content">
+            <link rel="stylesheet" href="../../css/content_header.css">
+
+<div class="content_header">
+    <div class="navheader">
+        <div class="navheader_title">
+            내 정비소 관리
+        </div>
+        <ul class="navheader_list">
+            <li class="navheader_item">
+                <a href="">
+                    <span id="user_name">김주형</span> 님 반가워요 ~
+                </a>
+            </li>
+            <li class="navheader_item">
+                <a href="">
+                    로그아웃
+                </a>
+            </li>
+            <li class="navheader_item">
+                <a href="">
+                    설정
+                </a>
+            </li>
+            <li class="navheader_item active" id="nav_notification">
+                <a href="">
+                    <i>
+                        <img src="../../images/icon_notification.svg" alt="알림">
+                    </i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+            <div class="content_container">
+                <div class="content_wrap_main">
+                    <div class="main_myshop_wrap">
+                        <div class="dker p-x box">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="p-y-md clearfix nav-active-primary">
+                                        <ul class="nav nav-pills nav-sm">
+                                            <li class="nav-item active">
+                                                <a class="nav-link" href data-toggle="tab"
+                                                    data-target="#tab_1">기본 정보</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href data-toggle="tab" data-target="#tab_2">직원 관리</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href data-toggle="tab" data-target="#tab_3">리뷰 관리</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane p-v-sm active" id="tab_1">
+                                <div class="myshop_edit_item">
+                                    <div class="col-md-7">
+                                        <div class="myshop_edit_item_title text-muted">매장명</div>
+                                        <input type="text"  class="form-control" value="블루핸즈 정비소">
+                                    </div>
+                                </div>
+                                <div class="myshop_edit_item">
+                                    <div class="col-md-7">
+                                        <div class="myshop_edit_item_title text-muted">전화번호</div>
+                                        <div class="myshop_edit_plural">
+                                            <input type="tel"  class="form-control" value="010">
+                                            <span>-</span>
+                                            <input type="tel"  class="form-control" value="1234">
+                                            <span>-</span>
+                                            <input type="tel"  class="form-control" value="4321">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="myshop_edit_item">
+                                    <div class="col-md-7">
+                                        <div class="myshop_edit_item_title text-muted">평일 운영 시간</div>
+                                        <div class="myshop_edit_plural">
+                                            <input type='text' class="form-control" ui-jp="datetimepicker" value="9:00 AM"
+                                                ui-options="{
+                                                format: 'LT',
+                                                icons: {
+                                                time: 'fa fa-clock-o',
+                                                date: 'fa fa-calendar',
+                                                up: 'fa fa-chevron-up',
+                                                down: 'fa fa-chevron-down',
+                                                previous: 'fa fa-chevron-left',
+                                                next: 'fa fa-chevron-right',
+                                                today: 'fa fa-screenshot',
+                                                clear: 'fa fa-trash',
+                                                close: 'fa fa-remove'
+                                                }
+                                            }">
+                                            <span>~</span>
+                                            <input type='text' class="form-control" ui-jp="datetimepicker" value="6:00 PM"
+                                                ui-options="{
+                                                format: 'LT',
+                                                icons: {
+                                                time: 'fa fa-clock-o',
+                                                date: 'fa fa-calendar',
+                                                up: 'fa fa-chevron-up',
+                                                down: 'fa fa-chevron-down',
+                                                previous: 'fa fa-chevron-left',
+                                                next: 'fa fa-chevron-right',
+                                                today: 'fa fa-screenshot',
+                                                clear: 'fa fa-trash',
+                                                close: 'fa fa-remove'
+                                                }
+                                            }">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="myshop_edit_item">
+                                    <div class="col-md-7">
+                                        <div class="myshop_edit_item_title text-muted">주말 운영 시간</div>
+                                        <div class="myshop_edit_plural">
+                                            <input type='text' class="form-control" ui-jp="datetimepicker" value="10:00 AM"
+                                                ui-options="{
+                                                format: 'LT',
+                                                icons: {
+                                                time: 'fa fa-clock-o',
+                                                date: 'fa fa-calendar',
+                                                up: 'fa fa-chevron-up',
+                                                down: 'fa fa-chevron-down',
+                                                previous: 'fa fa-chevron-left',
+                                                next: 'fa fa-chevron-right',
+                                                today: 'fa fa-screenshot',
+                                                clear: 'fa fa-trash',
+                                                close: 'fa fa-remove'
+                                                }
+                                            }">
+                                            <span>~</span>
+                                            <input type='text' class="form-control" ui-jp="datetimepicker" value="5:00 PM"
+                                                ui-options="{
+                                                format: 'LT',
+                                                icons: {
+                                                time: 'fa fa-clock-o',
+                                                date: 'fa fa-calendar',
+                                                up: 'fa fa-chevron-up',
+                                                down: 'fa fa-chevron-down',
+                                                previous: 'fa fa-chevron-left',
+                                                next: 'fa fa-chevron-right',
+                                                today: 'fa fa-screenshot',
+                                                clear: 'fa fa-trash',
+                                                close: 'fa fa-remove'
+                                                }
+                                            }">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="myshop_edit_item">
+                                    <div class="col-md-7">
+                                        <div class="myshop_edit_item_title text-muted">영업일</div>
+                                        <div class="myshop_edit_day">
+                                            <div class="myshop_edit_day_checkbox">
+                                                <label class="day_label">
+                                                    <input type="checkbox" checked>
+                                                    <span>월</span>
+                                                </label>
+                                            </div>
+                                            <div class="myshop_edit_day_checkbox">
+                                                <label class="day_label">
+                                                    <input type="checkbox" checked>
+                                                    <span>화</span>
+                                                </label>
+                                            </div>
+                                            <div class="myshop_edit_day_checkbox">
+                                                <label class="day_label">
+                                                    <input type="checkbox" checked>
+                                                    <span>수</span>
+                                                </label>
+                                            </div>
+                                            <div class="myshop_edit_day_checkbox">
+                                                <label class="day_label">
+                                                    <input type="checkbox" checked>
+                                                    <span>목</span>
+                                                </label>
+                                            </div>
+                                            <div class="myshop_edit_day_checkbox">
+                                                <label class="day_label">
+                                                    <input type="checkbox" checked>
+                                                    <span>금</span>
+                                                </label>
+                                            </div>
+                                            <div class="myshop_edit_day_checkbox">
+                                                <label class="day_label">
+                                                    <input type="checkbox">
+                                                    <span>토</span>
+                                                </label>
+                                            </div>
+                                            <div class="myshop_edit_day_checkbox">
+                                                <label class="day_label">
+                                                    <input type="checkbox">
+                                                    <span>일</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+
+                                <div class="myshop_edit_item">
+                                    <div class="col-md-7">
+                                        <div class="myshop_edit_item_title text-muted">정비소 주소</div>
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                              <button class="btn white" type="button">주소 검색</button>
+                                            </span>
+                                            <input type="text" class="form-control" value="12345 경기도 수원시 팔달구 다가대로 1234-5 1901호">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="myshop_edit_item">
+                                    <div class="col-md-7">
+                                        <div class="myshop_edit_item_title text-muted">매장 이미지</div>
+                                        <div class="img_preview_wrap">
+                                            <img src="../../images/img_upload.png" alt="">
+                                        </div>
+                                        <div class="form-file">
+                                            <input type="file">
+                                            <button class="btn white">이미지 업로드하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="myshop_edit_item">
+                                    <div class="col-md-7">
+                                        <div class="myshop_edit_item_title text-muted">정비 영역</div>
+                                        <div class="tag_box">
+                                            <span class="tag_item">
+                                                정비 아이템 1
+                                            </span>
+                                            <span class="tag_item">
+                                                정비 아이템 2
+                                            </span>
+                                            <span class="tag_item">
+                                                정비 아이템 3
+                                            </span>
+                                            <span class="tag_item">
+                                                정비 아이템 4
+                                            </span>
+                                            <span class="tag_item">
+                                                정비 아이템 5
+                                            </span>
+                                            <span class="tag_item">
+                                                정비 아이템 6
+                                            </span>
+                                            <span class="tag_item">
+                                                정비 아이템 1
+                                            </span>
+                                            <span class="tag_item">
+                                                정비 아이템 2
+                                            </span>
+                                            <span class="tag_item">
+                                                정비 아이템 3
+                                            </span>
+                                            <span class="tag_item">
+                                                정비 아이템 4
+                                            </span>
+                                            <span class="tag_item">
+                                                정비 아이템 5
+                                            </span>
+                                            <span class="tag_item">
+                                                정비 아이템 6
+                                            </span>
+
+
+                                            <button class="tag_edit">
+                                                태그 수정하기
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="myshop_edit_btn">
+                                    <div class="col-md-7">
+                                        <button type="submit" class="btn btn-primary btn_edit">수정하기</button>
+                                    </div>
+                                </div>
+
+
+                                
+                            </div>
+                            <div class="tab-pane p-v-sm" id="tab_2">
+                                <div class="box">
+                                    <div>
+                                      <table class="table manager_table m-b-none" ui-jp="footable" data-filter="#filter" data-page-size="5">
+                                        <thead>
+                                          <tr>
+                                              <th data-toggle="true">
+                                                  이름
+                                              </th>
+                                              <th>
+                                                  연락처
+                                              </th>
+                                              <th>
+                                                  상태
+                                              </th>
+                                              <th>
+                                                  권한관리
+                                              </th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                              <td>김주형</td>
+                                              <td>010-1234-5678</td>
+                                              <td data-value="1">대표</td>
+                                              <td data-value="1"></td>
+                                          </tr>
+                                          <tr>
+                                              <td>이버디</td>
+                                              <td>010-5678-1234</td>
+                                              <td data-value="2">정비사</td>
+                                              <td data-value="2"><button class="manager" data-toggle="modal" data-target="#m-sm">관리자</button></td>
+                                          </tr>
+                                          <tr>
+                                              <td>강현대</td>
+                                              <td>010-1234-5678</td>
+                                              <td data-value="2">정비사</td>
+                                              <td data-value="3"><button class="add_manager" data-toggle="modal" data-target="#m-sm">관리자</button></td>
+                                          </tr>
+                                          <tr>
+                                              <td>김정비</td>
+                                              <td>010-5678-1234</td>
+                                              <td data-value="2">정비사</td>
+                                              <td data-value="4"><button class="add_manager" data-toggle="modal" data-target="#m-sm">관리자</button></td>
+                                          </tr>
+                                          <tr>
+                                              <td>최버디</td>
+                                              <td>010-1234-5678</td>
+                                              <td data-value="3">승인요청</td>
+                                              <td data-value="4"><button class="approval" data-toggle="modal" data-target="#m-sm">승인</button><button class="refuse" data-toggle="modal" data-target="#m-sm">거절</button></td>
+                                          </tr>
+                                          <tr>
+                                              <td>이현대</td>
+                                              <td>010-5678-1234</td>
+                                              <td data-value="3">승인요청</td>
+                                              <td data-value="4"><button class="approval" data-toggle="modal" data-target="#m-sm">승인</button><button class="refuse" data-toggle="modal" data-target="#m-sm">거절</button></td>
+                                          </tr>
+                                          <tr>
+                                              <td>최주형</td>
+                                              <td>010-1234-5678</td>
+                                              <td data-value="3">승인요청</td>
+                                              <td data-value="4"><button class="approval" data-toggle="modal" data-target="#m-sm">승인</button><button class="refuse" data-toggle="modal" data-target="#m-sm">거절</button></td>
+                                          </tr>
+                                        </tbody>
+                                        <tfoot class="hide-if-no-paging">
+                                          <tr>
+                                              <td colspan="5" class="text-center">
+                                                  <ul class="pagination"></ul>
+                                              </td>
+                                          </tr>
+                                        </tfoot>
+                                      </table>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="tab-pane p-v-sm" id="tab_3">
+                                <div class="list_empty">
+                                    <img src="../../images/empty.svg" alt="">
+                                    <div class="list_empty_text">
+                                        작성된 리뷰가 없습니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_wrap_sub">
+                    <!-- active 클래스 추가 시 오픈 -->
+                    <div class="content_sub_area">
+                        <button class="content_sub_btn">
+                            <i class="material-icons md-24">&#xe5c4;</i>
+                            닫기
+                        </button>
+                        <div class="category_edit_area">
+                            <div class="category_edit_top">
+                                <div class="category_edit_title">
+                                    정비 영역
+                                </div>
+                                <div class="category_edit_subtitle">
+                                    우리 정비소의 정비 영역을 설정해주세요 !
+                                </div>
+                            </div>
+                            <div class="category_edit_body">
+                                <div class="shop_private_wrap">
+                                    <div class="shop_private_checkbox">
+                                        <label class="shop_private_label">
+                                            <input type="radio" name="shop_private_radio" checked>
+                                            <span>프렌차이즈</span>
+                                        </label>
+                                    </div>
+                                    <div class="shop_private_checkbox">
+                                        <label class="shop_private_label">
+                                            <input type="radio" name="shop_private_radio">
+                                            <span>사설정비소</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="category_edit_item">
+                                    <p>
+                                        <label class="md-check">
+                                            <input type="checkbox">
+                                            <i class="blue"></i>
+                                            자동차 검사
+                                        </label>
+                                    </p>
+
+                                    <select class="form-control input-c">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="category_edit_item">
+                                    <p>
+                                        <label class="md-check">
+                                            <input type="checkbox">
+                                            <i class="blue"></i>
+                                            전기차
+                                        </label>
+                                    </p>
+
+                                    <select class="form-control input-c">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="category_edit_item">
+                                    <p>
+                                        <label class="md-check">
+                                            <input type="checkbox">
+                                            <i class="blue"></i>
+                                            수소차
+                                        </label>
+                                    </p>
+                                </div>
+                                <div class="category_edit_item">
+                                    <p>
+                                        <label class="md-check">
+                                            <input type="checkbox">
+                                            <i class="blue"></i>
+                                            전문
+                                        </label>
+                                    </p>
+                                </div>
+
+                                <div class="category_save_btn">
+                                    <button type="submit" class="btn btn-primary">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+<script src="../../js/jquery/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+  <script src="../../js/jquery/tether/dist/js/tether.min.js"></script>
+  <script src="../../js/jquery/bootstrap/dist/js/bootstrap.js"></script>
+<!-- core -->
+  <script src="../../js/jquery/underscore/underscore-min.js"></script>
+  <script src="../../js/jquery/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+  <script src="../../js/jquery/PACE/pace.min.js"></script>
+
+  <script src="../../js/scripts/config.lazyload.js"></script>
+
+  <script src="../../js/scripts/palette.js"></script>
+  <script src="../../js/scripts/ui-load.js"></script>
+  <script src="../../js/scripts/ui-jp.js"></script>
+  <script src="../../js/scripts/ui-include.js"></script>
+  <script src="../../js/scripts/ui-device.js"></script>
+  <script src="../../js/scripts/ui-form.js"></script>
+  <script src="../../js/scripts/ui-nav.js"></script>
+  <script src="../../js/scripts/ui-screenfull.js"></script>
+  <script src="../../js/scripts/ui-scroll-to.js"></script>
+  <script src="../../js/scripts/ui-toggle-class.js"></script>
+
+  <script src="../../js/scripts/app.js"></script>
+
+  <!-- ajax -->
+  <script src="../../js/jquery/jquery-pjax/jquery.pjax.js"></script>
+  <script src="../../js/scripts/ajax.js"></script>
+
+
+  <script src="../../js/common.js"></script>
+<!-- endbuild -->
+
+    <script>
+        $('.nav_list .nav_item').eq(3).addClass('active');
+    </script>
+</body>
+
+</html>

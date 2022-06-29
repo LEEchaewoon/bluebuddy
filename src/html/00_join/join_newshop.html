@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        @@include('../../htmlPartials/_head.html', {
+            "headTitle": "BLUE BUDDY : 신규 업체 등록"
+        })
+
+    </head>
+    <body>
+        <link rel="stylesheet" href="../../css/join.css">
+        <div class="join_container">
+            <div class="join_wrap">
+                <div class="join_header">
+                    <div class="logo_area">
+                        <img src="../../images/bb_logo.svg" alt="BLUE BUDDY">
+                    </div>
+                </div>
+                
+                <h1 class="join_title">신규 업체 등록</h1>
+
+                <div class="join_form">
+                    <div class="row_group">
+                        <div class="join_row">
+                            <div class="form-outline">
+                                <input type="text" id="typeText" class="form-control" />
+                                <label class="form-label" for="typeText">사업자 등록번호</label>
+                            </div>
+                        </div>
+                        <div class="join_row">
+                            <div class="form-outline">
+                                <input type="text" id="typeText" class="form-control" />
+                                <label class="form-label" for="typeText">대표자 성명</label>
+                            </div>
+                        </div>
+                        <div class="join_row join_datepicker">
+                            <div class="form-outline">
+                                <input type="text" id="datepicker" class="form-control datepicker" />
+                                <label class="form-label" for="datepicker">개업일자</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="join_btn_wrap">
+                    <button type="button" class="btn btn-primary">사업자 정보 조회</button>
+                </div>
+            </div>
+        </div>
+
+        @@include('../../htmlPartials/_footer.html')
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="../../js/join.js"></script>
+    </body>
+</html>

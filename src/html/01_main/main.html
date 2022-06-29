@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        @@include('../../htmlPartials/_main_head.html', {
+            "headTitle": "BLUE BUDDY"
+        })
+
+    </head>
+    <body>
+        
+        <div class="main_container">
+            @@include('../../htmlPartials/_sidebar.html')
+            
+
+            <div id="content" class="bb_content">
+                @@include('../../htmlPartials/_content_header.html', {
+                    "contentTitle": "홈"
+                })
+
+                <div class="content_container">
+                    <div class="content_wrap_main">
+                        <div class="main_calendar_toggle">
+                            <button class="main_calendar_toggle_btn" onclick="main_calendar_toggle();">내 정비소 일정 열기</button>
+                        </div>
+                        <div class="dashboard_main">
+                            <div class="main_welcome_text">
+                                <p><span id="main_username">김주형</span>님</p>
+                                <p>즐거운 하루 되세요 !</p>
+                            </div>
+                            <div class="main_project">
+                                <a class="main_project_link" href="">
+                                    <div class="main_project_title">진행중</div>
+                                    <span class="main_project_count">18</span>
+                                </a>
+                                <a class="main_project_link" href="">
+                                    <div class="main_project_title">예약 건</div>
+                                    <span class="main_project_count">24</span>
+                                </a>
+                                <a class="main_project_link" href="">
+                                    <div class="main_project_title">예약변경</div>
+                                    <span class="main_project_count">2</span>
+                                </a>
+                            </div>
+                            <div class="main_bn new">
+                                <!-- sales / new / ongoing -->
+                                <div class="main_banner main_banner_sales">
+                                    <a class="main_banner_link">
+                                        <div class="text_wrap">
+                                            <h1>사장님!</h1>
+                                            <p>월 매출 확인해보셨나요?</p>
+                                            <span>
+                                                바로가기
+                                            </span>
+                                        </div>
+                                        <div class="img_wrap">
+                                            <img src="../../images/sales.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="main_banner main_banner_new">
+                                    <a class="main_banner_link">
+                                        <div class="text_wrap">
+                                            <h1>사장님!</h1>
+                                            <p>신규 예약요청 건이 있습니다.</p>
+                                            <span>
+                                                바로가기
+                                            </span>
+                                        </div>
+                                        <div class="img_wrap">
+                                            <img src="../../images/new.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="main_banner main_banner_ongoing">
+                                    <a class="main_banner_link">
+                                        <div class="text_wrap">
+                                            <h1>사장님!</h1>
+                                            <p>처리중인 정비내역이 있습니다.</p>
+                                            <span>
+                                                바로가기
+                                            </span>
+                                        </div>
+                                        <div class="img_wrap">
+                                            <img src="../../images/ongoing.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="main_myshop">
+                                <div class="main_myshop_top">
+                                    <div class="main_myshop_title">
+                                        내 정비소 관리
+                                    </div>
+                                    <a href="" class="main_myshop_edit">수정하기</a>
+                                </div>
+                                <ul class="list-group main_myshop_list" ui-jp="sortable">
+                                    <li class="list-group-item main_myshop_item">
+                                        <a class="main_myshop_link" href="">
+                                            <div class="img_wrap">
+                                                <img src="https://mblogthumb-phinf.pstatic.net/MjAxOTA4MDhfMTk5/MDAxNTY1MjIzNTM0NTU1.T8n9ETWcswhMEED9jD43zLgXT408g9d7JM91ar15UPYg.mp5XCPZbotEnpzxP5OmGa_BdAyJM12JARNIW_LAg6Yog.PNG.ucar_blog/1.png?type=w800" alt="">
+                                            </div>
+                                            <div class="main_myshop_info">
+                                                <div class="shop_name">
+                                                    블루핸즈 정비소
+                                                </div>
+                                                <div class="star_rating">
+                                                    <i class="material-icons md-18">&#xe838;</i>
+                                                    <span>4.5</span>
+                                                </div>
+                                                <div class="shop_address">
+                                                    경기도 수원시 인계동 가나대로 523
+                                                </div>
+                                            </div>
+                                            <i class="material-icons icon_sort">&#xe5d2;</i>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item main_myshop_item">
+                                        <a class="main_myshop_link" href="">
+                                            <div class="img_wrap">
+                                                <img src="https://philain.com/wp-content/uploads/2018/01/car-service-1.jpg" alt="">
+                                            </div>
+                                            <div class="main_myshop_info">
+                                                <div class="shop_name">
+                                                    블루핸즈 정비소
+                                                </div>
+                                                <div class="star_rating">
+                                                    <i class="material-icons md-18">&#xe838;</i>
+                                                    <span>4.5</span>
+                                                </div>
+                                                <div class="shop_address">
+                                                    경기도 수원시 인계동 가나대로 523
+                                                </div>
+                                            </div>
+                                            <i class="material-icons icon_sort">&#xe5d2;</i>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item main_myshop_item">
+                                        <a class="main_myshop_link" href="">
+                                            <div class="img_wrap">
+                                                <img src="https://t1.daumcdn.net/cfile/tistory/99F29D465FC741B62B" alt="">
+                                            </div>
+                                            <div class="main_myshop_info">
+                                                <div class="shop_name">
+                                                    블루핸즈 정비소
+                                                </div>
+                                                <div class="star_rating">
+                                                    <i class="material-icons md-18">&#xe838;</i>
+                                                    <span>4.5</span>
+                                                </div>
+                                                <div class="shop_address">
+                                                    경기도 수원시 인계동 가나대로 523
+                                                </div>
+                                            </div>
+                                            <i class="material-icons icon_sort">&#xe5d2;</i>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item main_myshop_item">
+                                        <a class="main_myshop_link" href="">
+                                            <div class="img_wrap">
+                                                <img src="https://ww.namu.la/s/31e6f84bfc8dc341da3bf574076a37d83d2c760b24ac528c0c7e4e9f0b95a4a0f0afb76e0fe9879ebbf9d1f8d0a53111e3ee52fc7d1415bdab826637e1f64764bd3c9e1cff255f9d338718d0a7d0a968" alt="">
+                                            </div>
+                                            <div class="main_myshop_info">
+                                                <div class="shop_name">
+                                                    블루핸즈 정비소
+                                                </div>
+                                                <div class="star_rating">
+                                                    <i class="material-icons md-18">&#xe838;</i>
+                                                    <span>4.5</span>
+                                                </div>
+                                                <div class="shop_address">
+                                                    경기도 수원시 인계동 가나대로 523
+                                                </div>
+                                            </div>
+                                            <i class="material-icons icon_sort">&#xe5d2;</i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_wrap_sub active">
+                        <!-- active 클래스 추가 시 오픈 -->
+                        <div class="content_sub_area">
+                            <button class="content_sub_btn">
+                                <i class="material-icons md-24">&#xe5c4;</i>
+                                닫기
+                            </button>
+                            <div class="dashboard_sub">
+                                @@include('../../htmlPartials/_calendar.html')
+
+
+                                <div class="main_notice_wrap">
+                                    <div class="main_notice_title">
+                                        공지사항
+                                    </div>
+                                    <div class="main_notice">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <a href>
+                                                    <span class="block _500">예약은 어디서 할 수 있을까요?</span>
+                                                    <span class="text-muted">2022-03-11</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href>
+                                                    <span class="block _500">09일 예약했습니다. 차의 수리할 곳을 추가하려면</span>
+                                                    <span class="text-muted">2022-03-11</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href>
+                                                    <span class="block _500">예약은 어디서 할 수 있을까요?</span>
+                                                    <span class="text-muted">03.11</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href>
+                                                    <span class="block _500">예약은 어디서 할 수 있을까요?</span>
+                                                    <span class="text-muted">03.11</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('../../htmlPartials/_main_footer.html')
+
+        <script>
+            $('.nav_list .nav_item').eq(0).addClass('active');
+        </script>
+
+        <script>
+            function mobile_main_start() {
+                if($(window).width() < 768) {
+                    $('.content_wrap_sub').removeClass('active');
+                } else {
+                    $('.content_wrap_sub').addClass('active');
+                }
+            }
+
+            $(document).ready(function () {
+                mobile_main_start();
+            });
+
+            $(window).resize(function() {
+                if(this.resizeTO) {
+                    clearTimeout(this.resizeTO);
+                }
+                this.resizeTO = setTimeout(function() {
+                    $(this).trigger('resizeEnd'); 
+                }, 200);
+            });
+
+            $(window).on('resizeEnd', function() {
+                mobile_main_start();
+            });
+        </script>
+    </body>
+</html>

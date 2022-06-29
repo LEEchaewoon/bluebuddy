@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    @@include('../../htmlPartials/_main_head.html', {
+    "headTitle": "BLUE BUDDY : 커뮤니티"
+    })
+
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="../../css/community.css">
+
+    <div class="main_container">
+        @@include('../../htmlPartials/_sidebar.html')
+
+
+        <div id="content" class="bb_content">
+            @@include('../../htmlPartials/_content_header.html', {
+            "contentTitle": "정비소 커뮤니티"
+            })
+
+            <div class="content_container">
+                <div class="content_wrap_main">
+                    <div class="community_list_area">
+                        <button class="community_write">
+                            <i class="material-icons md-24">&#xe150;</i>
+                            글작성
+                        </button>
+                        <div class="list_empty">
+                            <img src="../../images/empty.svg" alt="">
+                            <div class="list_empty_text">
+                                커뮤니티 게시글이 없습니다.
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="content_wrap_sub active">
+                    <!-- active 클래스 추가 시 오픈 -->
+                    <div class="content_sub_area">
+                        <button class="content_sub_btn">
+                            <i class="material-icons md-24">&#xe5c4;</i>
+                            닫기
+                        </button>
+                        <div class="community_comment_area">
+                            <div class="comment_title">
+                                댓글 <span class="comment_label">0</span>
+                            </div>
+                            <div class="comment_body">
+                                <div class="list_empty">
+                                    <img src="../../images/chat_empty.svg" alt="">
+                                    <div class="list_empty_text">
+                                        댓글이 없습니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment_write">
+                                <textarea class="form-control" rows="5" placeholder="내용을 입력해주세요."></textarea>
+                                <button type="submit" class="btn btn-primary">등록</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('../../htmlPartials/_main_footer.html')
+
+    <script>
+        $('.nav_list .nav_item').eq(4).addClass('active');
+    </script>
+</body>
+
+</html>

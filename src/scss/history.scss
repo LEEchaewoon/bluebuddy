@@ -1,0 +1,841 @@
+@import "layout";
+
+
+
+
+.main_history_wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    .history_title {
+        color: $primary-v;
+        @include font-size-1;
+        font-weight: 300;
+        line-height: 1.2;
+        margin-bottom: 30px;
+        text-align: center;
+
+        #history_username {
+            font-weight: 600;
+        }
+    }
+
+
+    .history_picker_area {
+        background-color: $secondary-050;
+        padding: 60px 40px;
+    }
+
+    .history_picker_title {
+        @include font-size-5;
+        font-weight: 300;
+        margin-bottom: 20px;
+        text-align: center;
+
+        strong {
+            font-weight: 500;
+        }
+    }
+
+    .history_picker {
+        display: flex;
+
+        .history_year,.history_month {
+            flex: 1;
+            font-family: Pretendard !important;
+        }
+
+        .history_year {
+            margin-right: 20px;
+        }
+    }
+
+    
+    .history_summary_area {
+        display: flex;
+        padding: 50px 0;
+        border-bottom: 1px solid $black-100;
+
+        .history_summary_times,.history_summary_sales {
+            flex: 1;
+            text-align: center;
+        }
+
+        .history_summary_times {
+            border-right: 1px solid $black-100;
+        }
+
+        .history_summary_title {
+            @include font-size-6;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+
+        .history_summary_content {
+            @include font-size-3;
+            font-weight: 300;
+
+            span {
+                font-weight: 500;
+                margin-right: 3px;
+            }
+        }
+    }
+
+    
+
+
+    .history_list_box {
+        margin-top: 40px
+    }
+    .history_date {
+        @include font-size-6;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    .history_user {
+        .username {
+            @include font-size-6;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .content {
+            color: $primary-v;
+            @include font-size-7;
+            font-weight: 500;
+        }
+    }
+
+    .history_item {
+        padding: 0;
+    }
+
+    .list-group-item {
+        border-color: rgba(120, 130, 140, 0.13);
+
+        & + .list-group-item {
+            border-top: none;
+        }
+    }
+
+    .history_label {
+        border: 1px solid $black-100;
+        background-color: $bg;
+        padding: 5px 20px;
+        border-radius: 20px;
+        @include ab-y-center;
+        right: 16px;
+    }
+
+    .history_item_wrap {
+        width: 100%;
+        height: 100%;
+        padding: 12px 16px;
+
+        &.open {
+            background-color: $secondary-050;
+        }
+    }
+
+}
+
+
+
+
+.schedule_sub_wrap {
+
+    .schedule_sub_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .schedule_sub_user {
+            .username {
+                @include font-size-4;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+
+            .phonenumber {
+                color: $primary-v;
+                @include font-size-6;
+            }
+        }
+    }
+
+
+    .schedule_sub_info {
+        .info_item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .info_title {
+                min-width: 70px;
+                @include font-size-7;
+                font-weight: 500;
+                color: $black-500;
+            }
+        }
+        .info_content {
+            font-weight: 500;
+        }
+
+
+
+        .category_area {
+            border: 1px solid rgba(120,130,140,.2);
+            padding: 12px;
+
+            .category_list {
+                display: flex;
+                flex-wrap: wrap;
+
+                .category_item {
+                    width: calc(50% - 5px);
+                    height: 24px;
+                    line-height: 24px;
+                    border-radius: 12px;
+                    background-color: $secondary;
+                    color: $bg;
+                    text-align: center;
+                    margin-top: 10px;
+
+                    &:nth-child(even) {
+                        margin-left: 10px;
+                    }
+
+                    &:nth-child(-n+2) {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+
+
+        .shop_caption_area {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid $black-100;
+            display: block;
+
+            .caption_save {
+                margin-top: 10px;
+                text-align: right;
+            }
+
+        }
+
+        .shop_check_area {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid $black-100;
+            display: block;
+
+            .btn {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .shop_check_text {
+                text-align: center;
+                color: $black-600;
+            }
+        }
+
+
+        .shop_cancel_area {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid $black-100;
+
+            .btn {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+
+        .shop_sales_area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid $primary;
+
+            .shop_sales_title {
+                @include font-size-5;
+            }
+
+            .shop_sales_content {
+                @include font-size-4;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+
+.modal {
+
+    .main_invoice_area.pc {
+        display: block;
+    }
+
+    .main_invoice_area.mobile {
+        display: none;
+    }
+
+    .main_invoice_area {
+        .invoice_wrap {
+            border: 1px solid $black-100;
+            display: flex;
+    
+            & + .invoice_wrap {
+                margin-top: 10px;
+            }
+    
+            .main_title {
+                flex: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: $primary-v;
+                font-weight: 600;
+                @include font-size-7;
+                width: 50px;
+                word-break: keep-all;
+                padding: 10px;
+            }
+    
+            .invoice_box {
+                flex: 1;
+    
+                .invoice_row {
+                    display: flex;
+    
+                    & + .invoice_row {
+                        border-top: 1px solid $black-100;
+                    }
+                }
+    
+                .invoice_item {
+                    display: flex;
+                    flex: 1;
+    
+                    &.col_2 {
+                        flex: 2;
+                    }
+    
+                    & > div {
+                        display: inline-flex;
+                        align-items: center;
+                    }
+    
+                    .sub_title {
+                        flex: none;
+                        justify-content: center;
+                        text-align: center;
+                        color: $primary-v;
+                        font-weight: 600;
+                        @include font-size-7;
+                        width: 80px;
+                        word-break: keep-all;
+                        border-left: 1px solid $black-100;
+                        border-right: 1px solid $black-100;
+                        padding: 10px;
+                        min-height: 50px;
+                    }
+    
+                    .invoice_content {
+                        flex: 1;
+                        min-height: 50px;
+                        padding: 10px;
+    
+                        .input_mileage {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+    
+        .repair_write_wrap {
+            border: 1px solid $black-100;
+            margin-top: 10px;
+    
+            .main_title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: $primary-v;
+                font-weight: 600;
+                @include font-size-7;
+                width: 100%;
+                word-break: keep-all;
+                padding: 10px;
+                border-bottom: 1px solid $black-100;
+            }
+    
+            .repair_write_box {
+    
+                .repair_write_row {
+                    display: flex;
+                }
+    
+                .repair_write_item {
+                    display: flex;
+                    flex: 1;
+    
+                    & > div {
+                        display: inline-flex;
+                        align-items: center;
+                    }
+    
+                    .sub_title {
+                        flex: 1;
+                        justify-content: center;
+                        text-align: center;
+                        color: $primary-v;
+                        font-weight: 600;
+                        @include font-size-7;
+                        word-break: keep-all;
+                        border-right: 1px solid $black-100;
+                        padding: 10px;
+                        min-height: 50px;
+                    }
+    
+                    & + .repair_write_item .sub_title {
+                        border-left: 1px solid $black-100;
+                    }
+    
+                    .invoice_content {
+                        flex: 1;
+                        justify-content: center;
+                        min-height: 50px;
+                        padding: 10px;
+                    }
+                }
+            }
+    
+    
+            
+        }
+    
+    
+        .repair_table_wrap {
+            border: 1px solid $black-100;
+            margin-top: 10px;
+    
+            .table_title_area {
+                display: flex;
+    
+                .table_title {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    color: $primary-v;
+                    font-weight: 600;
+                    @include font-size-7;
+                    word-break: keep-all;
+                    padding: 10px;
+                    min-height: 50px;
+    
+                    &+.table_title {
+                        border-left: 1px solid $black-100;
+                    }
+    
+                    &.split {
+                        padding: 0;
+                    }
+    
+                    .table_subtitle {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px;
+    
+                        &+.table_subtitle {
+                            border-top: 1px solid $black-100;
+                            padding: 0;
+    
+                            .table_subtitle_item {
+                                padding: 10px;
+    
+                                &+.table_subtitle_item {
+                                    border-left: 1px solid $black-100;
+                                }
+    
+                                &:nth-child(1) {
+                                    flex: 1;
+                                }
+    
+                                &:nth-child(2) {
+                                    flex: 4;
+                                }
+    
+                                &:nth-child(3) {
+                                    flex: 1;
+                                }
+    
+                                &:nth-child(4) {
+                                    flex: 3;
+                                }
+    
+                                &:nth-child(5) {
+                                    flex: 3;
+                                }
+                            }
+                        }
+                    }
+    
+    
+                    &:nth-child(1) {
+                        flex: 3;
+                    }
+    
+                    &:nth-child(2) {
+                        flex: 6;
+                    }
+    
+                    &:nth-child(3) {
+                        flex: 1;
+                    }
+                }
+            }
+    
+            .table_write_area {
+                border-top: 1px solid $black-100;
+    
+                .table_write_column {
+                    display: flex;
+                    border-bottom: 1px solid $black-100;
+    
+                    .table_write_item {
+                        flex: 1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px;
+    
+                        &+.table_write_item {
+                            border-left: 1px solid $black-100;
+                        }
+    
+                        &.wrap {
+                            padding: 0;
+    
+                            .table_write_item_sub {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 10px;
+                                height: 100%;
+    
+                                &+.table_write_item_sub {
+                                    border-left: 1px solid $black-100;
+                                }
+    
+                                &:nth-child(1) {
+                                    flex: 1;
+                                }
+    
+                                &:nth-child(2) {
+                                    flex: 4;
+                                }
+    
+                                &:nth-child(3) {
+                                    flex: 1;
+                                }
+    
+                                &:nth-child(4) {
+                                    flex: 3;
+                                }
+    
+                                &:nth-child(5) {
+                                    flex: 3;
+                                }
+                            }
+                        }
+    
+                        &:nth-child(1) {
+                            flex: 3;
+                        }
+    
+                        &:nth-child(2) {
+                            flex: 6;
+                        }
+    
+                        &:nth-child(3) {
+                            flex: 1;
+                        }
+    
+    
+                        .form-control {
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+    
+            .column_append_btn_area {
+                text-align: center;
+                padding: 20px 0;
+            }
+        }
+    
+    
+        .repair_sum_wrap {
+            border: 1px solid $black-100;
+            margin-top: 10px;
+            display: flex;
+    
+            .repair_sum_box {
+                flex: 1;
+                display: flex;
+    
+                & + .repair_sum_box .repair_sum_title {
+                    border-left: 1px solid $black-100;
+                }
+    
+                .repair_sum_title {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    color: $primary-v;
+                    font-weight: 600;
+                    @include font-size-7;
+                    word-break: keep-all;
+                    padding: 10px;
+                    min-height: 50px;
+                    width: 80px;
+                    border-right: 1px solid $black-100;
+    
+                }
+    
+                .repair_sum_content {
+                    flex: 1;
+                    min-height: 50px;
+                    padding: 10px;
+                    display: inline-flex;
+                    align-items: center;
+                }
+            }
+        }
+    
+    
+        .invoice_save_wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            padding-top: 20px;
+            border-top: 1px solid $black-100;
+    
+            .btn {
+                width: 20%;
+                margin: 0px 5px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 700px;
+    }
+}
+
+
+
+
+@include mobile {
+
+    .main_history_wrap .history_title {
+        @include font-size-2;
+    }
+
+    .main_history_wrap .history_picker_area {
+        padding: 40px;
+    }
+
+
+    .modal {
+        .main_invoice_area.pc {
+            display: none;
+        }
+    
+        .main_invoice_area.mobile {
+            display: block;
+        }
+    
+        .main_invoice_area .invoice_save_wrap .btn {
+            width: auto;
+        }
+    
+        .main_invoice_area {
+            overflow: hidden;
+        }
+    
+        .main_invoice_area .invoice_wrap .invoice_box .invoice_row {
+            flex-wrap: wrap;
+        }
+    
+        .main_invoice_area .invoice_wrap .invoice_box .invoice_item {
+            flex: none;
+            width: 100%;
+        }
+    
+        .main_invoice_area .invoice_wrap .invoice_box .invoice_item + .invoice_item {
+            border-top: 1px solid #dcdcdc;
+        }
+    
+        .main_invoice_area .repair_table_wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_title_area {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            border-right: 1px solid #dcdcdc;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_title_area .table_title {
+            flex: none !important;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_write_area {
+            width: 60%;
+        }
+    
+        .main_invoice_area .repair_table_wrap .column_append_btn_area {
+            width: 100%;
+            border-top: 1px solid #DCDCDC;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_title_area .table_title.split {
+            flex-direction: row;
+            border-bottom: 1px solid #DCDCDC;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_title_area .table_title .table_subtitle:nth-child(1) {
+            width: 30%;
+            border-top: 1px solid #DCDCDC;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_title_area .table_title .table_subtitle:nth-child(2) {
+            width: 70%;
+            flex-direction: column;
+        }
+
+        .main_invoice_area .repair_table_wrap .table_write_area .table_write_column .table_write_item.wrap .table_write_item_sub:nth-child(1) {
+            border-top: none;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_title_area .table_title .table_subtitle + .table_subtitle .table_subtitle_item {
+            flex: none !important;
+            width: 100%;
+            min-height: 50px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_title_area .table_title + .table_title {
+            border-left: none;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_title_area .table_title .table_subtitle + .table_subtitle .table_subtitle_item {
+            border-left: 1px solid #DCDCDC;
+            border-top: 1px solid #DCDCDC;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_title_area .table_title .table_subtitle + .table_subtitle .table_subtitle_item:nth-child(1) {
+            border-top: none;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_write_area .table_write_column {
+            flex-direction: column;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_write_area .table_write_column .table_write_item {
+            min-height: 50px;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_write_area .table_write_column .table_write_item.wrap {
+            flex-direction: column;
+            border-top: 1px solid #DCDCDC;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_write_area .table_write_column .table_write_item.wrap .table_write_item_sub {
+            width: 100%;
+            min-height: 50px;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_write_area .table_write_column .table_write_item + .table_write_item {
+            border-left: none;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_write_area .table_write_column .table_write_item.wrap .table_write_item_sub + .table_write_item_sub {
+            border-left: none;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_write_area .table_write_column .table_write_item.wrap .table_write_item_sub {
+            border-top: 1px solid #DCDCDC;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_write_area {
+            border-top: none;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_write_area .table_write_column {
+            border-bottom: none;
+        }
+    
+        .main_invoice_area .repair_table_wrap .table_write_area .table_write_column .table_write_item:nth-child(3) {
+            border-top: 1px solid #DCDCDC;
+        }
+    
+        .mobile_append_area {
+            width: 100%;
+        }
+        
+        .mobile_append {
+            width: 100%;
+            display: flex;
+    
+            & + .mobile_append {
+                border-top: 2px solid #DCDCDC;
+            }
+        }
+    
+        .main_invoice_area .repair_sum_wrap {
+            flex-direction: column;
+        }
+    
+        .main_invoice_area .repair_sum_wrap .repair_sum_box + .repair_sum_box .repair_sum_title {
+            border-left: none;
+            border-top: 1px solid #DCDCDC;
+        }
+    
+        .main_invoice_area .repair_sum_wrap .repair_sum_box + .repair_sum_box .repair_sum_content {
+            border-top: 1px solid #DCDCDC;
+        }
+    }
+}

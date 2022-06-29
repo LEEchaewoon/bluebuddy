@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        @@include('../../htmlPartials/_head.html', {
+            "headTitle": "BLUE BUDDY : 내 정비소 등록"
+        })
+
+    </head>
+    <body>
+        <link rel="stylesheet" href="../../css/join.css">
+        <div class="join_container">
+            <div class="join_wrap">
+                <div class="join_header">
+                    <div class="logo_area">
+                        <img src="../../images/bb_logo.svg" alt="BLUE BUDDY">
+                    </div>
+                </div>
+
+                <h1 class="join_title">내 정비소 등록</h1>
+
+                <div class="join_company">
+                    <a href="" class="btn join_company_link company_new">
+                        <div class="link_title">
+                            신규 업체 등록
+                        </div>
+                        <div class="link_desc">
+                            블루버디 서비스를 처음 이용하시는 정비소 등록 메뉴
+                        </div>
+                    </a>
+                    <a href="" class="btn join_company_link company_member">
+                        <div class="link_title">
+                            기존 업체 등록
+                        </div>
+                        <div class="link_desc">
+                            블루버디 서비스 이용중인 정비소의 정비사 등록 메뉴
+                        </div>
+                    </a>
+
+                    <div class="company_defer">
+                        <p>
+                            지금 등록하지 않더라도, 언제든 블루버디 실행시 등록이 가능합니다.<br>
+                            블루버디 정비소서비스는 정비소 등록 혹은 소속 후, 전체 메뉴 서비스 이용이 가능합니다.
+                        </p>
+                        <button type="button" class="btn btn-light" data-mdb-ripple-color="dark">다음에 등록하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('../../htmlPartials/_footer.html')
+    </body>
+</html>

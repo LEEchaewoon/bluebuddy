@@ -1,0 +1,424 @@
+@import "layout";
+
+
+.join_container {
+    width: 100%;
+    height: 100%;
+    background-color: $black-050;
+    overflow-y: auto;
+    padding: 80px 0;
+}
+
+.join_wrap {
+    width: 600px;
+    padding: 50px;
+    background-color: $bg;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: rgba(0,0,0,0.05) 4px 4px 16px 0px;
+    margin: 0 auto;
+
+    .join_header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .join_title {
+        text-align: center;
+        @include font-size-1;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+
+    .join_btn_wrap {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        > button {
+            width: 100%;
+            height: 50px;
+        }
+
+        &.btn_2 > button {
+            width: 49%;
+        }
+    }
+}
+
+.main_join_area {
+    .join_btn_wrap {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        > button {
+            width: 100%;
+            height: 50px;
+        }
+
+        &.btn_2 > button {
+            width: 49%;
+        }
+    }
+
+    .form-check-label {
+        padding-left: 0;
+    }
+}
+
+
+.join_form {
+    .row_group+.row_group {
+        margin-top: 40px;
+    }
+
+    .join_row {
+        margin-top: 15px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &.join_id,&.join_business_hours {
+            display: flex;
+            align-items: center;
+
+            >* {
+                flex: 1;
+            }
+
+            > span {
+                flex: none;
+                padding: 0 10px;
+            }
+        }
+
+        &.join_name {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            >* {
+                flex: none;
+            }
+
+            > .gender_select {
+                label.btn {
+                    display: inline-flex;
+                    align-items: center;
+                }
+            }
+        }
+
+
+        .name_chk {
+            .btn.success {
+                background-color: $black-050;
+                color: $black-400;
+                cursor: auto;
+            }
+        }
+
+
+
+        .phone_chk_btn {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 8px 20px;
+            background-color: $secondary;
+            color: $bg;
+            border-radius: 30px;
+
+            &.success {
+                background-color: $black-050;
+                color: $black-400;
+                cursor: auto;
+            }
+        }
+
+        #timer {
+            @include ab-y-center;
+            right: 20px;
+            text-align: right;
+        }
+
+
+        .address_search_btn {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 8px 20px;
+            color: $primary-v;
+            border: 2px solid $primary-v;
+            background-color: $bg;
+            font-weight: 500;
+            border-radius: 30px;
+        }
+
+
+        &.item_select {
+
+            .item_title {
+                color: rgba(0,0,0,.6);
+                padding: 10px 0;
+            }
+            .form-check {
+                display: inline-block;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+
+.terms_area {
+    .terms_bx {
+        display: block;
+        padding-top: 30px;
+
+        label {
+            > strong {
+                @include font-size-7;
+                color: $black-500;
+
+                &.necessary {
+                    color: $secondary;
+                }
+            }
+        }
+
+        .terms_box {
+            position: relative;
+            overflow: auto;
+            height: 150px;
+            margin-top: 8px;
+            padding: 12px;
+            border: 1px solid $black-100;
+            background: $bg;
+            box-sizing: border-box;
+            .article {
+                @include font-size-7;
+                line-height: 20px;
+                color: $input-basic;
+                margin-top: 15px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                .article_title {
+                    font-weight: 600;
+                    padding-bottom: 8px;
+                }
+
+                .article_text+.article_text {
+                    margin-top: 8px;
+                }
+            }
+        }
+
+        .event_box {
+            @include font-size-6;
+            line-height: 20px;
+            color: $input-basic;
+            margin-top: 15px;
+        }
+    }
+
+
+    .terms_chk_all {
+        margin-top: 40px;
+
+        label {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.join_company {
+
+    .join_company_link {
+        display: block;
+        text-align: center;
+        color: $bg;
+        height: auto;
+        padding: 30px 0;
+
+
+        &.company_new {
+            background-color: $primary;
+            margin-bottom: 15px;
+        }
+
+        &.company_member {
+            background-color: $primary-v;
+        }
+
+        .link_title {
+            @include font-size-3;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .link_desc {
+            @include font-size-6;
+            font-weight: 300;
+        }
+    }
+
+    .company_defer {
+        display: block;
+        margin-top: 40px;
+
+        p {
+            @include font-size-7;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+}
+
+
+
+
+
+
+.join_search_result {
+
+    .search_number {
+        color: $secondary;
+        font-weight: 500;
+    }
+
+
+    .search_list {
+
+        margin-top: 20px;
+
+        .search_item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: rgb(0 0 0 / 10%) 0px 4px 10px 0px;
+
+            & + .search_item {
+                margin-top: 30px;
+            }
+        }
+
+        .img_wrap {
+            position: relative;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                padding-bottom: 40%;
+            }
+        }
+
+        .info_area {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+
+            .info_text {
+                flex: 1;
+                padding-right: 20px;
+            }
+        }
+
+        .info_title {
+            @include font-size-4;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .info_address {
+            color: $secondary;
+            @include font-size-6;
+            font-weight: 500;
+        }
+
+        .select_btn {
+            padding: 10px 25px;
+            background-color: $secondary;
+            color: $bg;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+    }
+}
+
+
+.confirm_caption {
+    @include font-size-7;
+    font-weight: 500;
+    margin-top: 14px;
+}
+
+
+@include mobile {
+
+
+    .join_wrap {
+        width: auto;
+        margin: 0 10px;
+        padding: 50px 20px;
+    }
+
+    .join_company .join_company_link .link_title {
+        @include font-size-5;
+    }
+
+    .join_wrap .join_title {
+        @include font-size-4;
+    }
+
+    .join_form .join_row.join_name > .gender_select label.btn {
+        @include font-size-7;
+        padding: 0 10px;
+    }
+
+    .join_form .join_row .name_chk .btn {
+        padding: 0 10px;
+    }
+
+    .join_form .join_row.join_name > *:first-child {
+        flex: 1;
+        margin-left: 0;
+    }
+
+    .join_form .join_row.join_name > * {
+        margin-left: 10px;
+    }
+
+    .join_search_result .search_list .info_title {
+        @include font-size-5;
+    }
+
+    .join_search_result .search_list .info_address {
+        @include font-size-7;
+    }
+
+    .join_search_result .search_list .info_area {
+        padding: 15px;
+    }
+}

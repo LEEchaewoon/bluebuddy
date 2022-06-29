@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        @@include('../../htmlPartials/_main_head.html', {
+            "headTitle": "BLUE BUDDY : 내 정비소 등록"
+        })
+
+    </head>
+    <body>
+
+        <link rel="stylesheet" href="../../css/mdb.custom.min.css">
+        <link rel="stylesheet" href="../../css/join.css">
+        
+        <div class="main_container">
+            @@include('../../htmlPartials/_sidebar_preview.html')
+
+            <div id="content" class="bb_content">
+                @@include('../../htmlPartials/_content_header.html', {
+                    "contentTitle": "내 정비소 등록"
+                })
+
+                <div class="content_container">
+                    <div class="content_wrap_main">
+                        <div class="main_join_area">
+                            <div class="join_company">
+                                <a href="" class="btn join_company_link company_new">
+                                    <div class="link_title">
+                                        신규 업체 등록
+                                    </div>
+                                    <div class="link_desc">
+                                        블루버디 서비스를 처음 이용하시는 정비소 등록 메뉴
+                                    </div>
+                                </a>
+                                <a href="" class="btn join_company_link company_member">
+                                    <div class="link_title">
+                                        기존 업체 등록
+                                    </div>
+                                    <div class="link_desc">
+                                        블루버디 서비스 이용중인 정비소의 정비사 등록 메뉴
+                                    </div>
+                                </a>
+            
+                                <div class="company_defer">
+                                    <p>
+                                        지금 등록하지 않더라도, 언제든 블루버디 실행시 등록이 가능합니다.<br>
+                                        블루버디 정비소서비스는 정비소 등록 혹은 소속 후, 전체 메뉴 서비스 이용이 가능합니다.
+                                    </p>
+                                    <button type="button" class="btn btn-light" data-mdb-ripple-color="dark">다음에 등록하기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_wrap_sub">
+                        <!-- active 클래스 추가 시 오픈 -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../../js/mdb.custom.min.js"></script>
+        @@include('../../htmlPartials/_main_footer.html')
+
+        <script>
+            $('.nav_list .nav_item').eq(1).addClass('active');
+        </script>
+    </body>
+</html> 

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        @@include('../../htmlPartials/_main_head.html', {
+            "headTitle": "BLUE BUDDY : 아이디 찾기"
+        })
+
+    </head>
+    <body>
+
+        <div class="app">
+            <div class="center-block w-xxl w-auto-xs p-y-md">
+                <div class="p-a-md box-color r box-shadow-z1 text-color m-a">
+                    <div class="m-b">
+                        아이디 찾기
+                        <p class="text-xs m-t">하단의 정보를 입력해주세요.</p>
+                    </div>
+                    <form name="reset">
+                        <div class="md-form-group">
+                            <button class="certify_btn completion">인증 완료</button>
+                            <input type="tel" class="md-input" required>
+                            <label>휴대폰 번호</label>
+                        </div>
+                        <div class="md-form-group">
+                            <button class="certify_btn">인증하기</button>
+                            <input type="number" class="md-input" required>
+                            <label>인증번호</label>
+                        </div>
+                        <div class="md-form-group">
+                            <input type="text" class="md-input" required>
+                            <label>이름</label>
+                        </div>
+
+                        <div class="id_info">
+                            회원님의 아이디는 <span>"hong1234@gmail.com"</span> 입니다.
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block p-x-md">아이디 찾기</button>
+                    </form>
+                </div>
+                <p id="alerts-container"></p>
+                <div class="p-v-lg text-center"><a ui-sref="access.signin" href=""
+                        class="text-primary _600">로그인</a> 페이지로 돌아가기</div>
+            </div>
+        </div>
+        
+
+        @@include('../../htmlPartials/_main_footer.html')
+
+    </body>
+</html> 

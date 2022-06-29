@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="Pragma" content="no-cache" />
+
+<!-- style -->
+<link rel="stylesheet" href="../../css/animate.css/animate.min.css" type="text/css" />
+<link rel="stylesheet" href="../../css/glyphicons/glyphicons.css" type="text/css" />
+<link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="../../css/material-design-icons/material-design-icons.css" type="text/css" />
+
+<link rel="stylesheet" href="../../css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+
+<link rel="stylesheet" href="../../css/app.css" type="text/css" />
+
+
+
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/main.css">
+
+
+<title>BLUE BUDDY : 업체 정보 등록</title>
+
+
+    </head>
+    <body>
+
+        <link rel="stylesheet" href="../../css/mdb.custom.min.css">
+        <link rel="stylesheet" href="../../css/join.css">
+        
+        <div class="main_container">
+            <link rel="stylesheet" href="../../css/nav_side.css">
+
+<aside id="aside" class="bb_aside">
+    <div class="navside">
+        <div class="logo_area">
+            <a class="logo_link" href="">
+                <img src="../../images/bb_logo.svg" alt="BLUE BUDDY">
+            </a>
+        </div>
+        <nav class="nav_area">
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_home.svg" alt="홈">
+                        </i>
+                        <div class="nav_title">
+                            홈
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_myshop.svg" alt="내 정비소 등록">
+                        </i>
+                        <div class="nav_title">
+                            내 정비소 등록
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="">
+                        <i>
+                            <img src="../../images/icon_user.svg" alt="내 정보 및 고객센터">
+                        </i>
+                        <div class="nav_title">
+                            내 정보 및 고객센터
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+            <div id="content" class="bb_content">
+                <link rel="stylesheet" href="../../css/content_header.css">
+
+<div class="content_header">
+    <div class="navheader">
+        <div class="navheader_title">
+            업체 정보 등록
+        </div>
+        <ul class="navheader_list">
+            <li class="navheader_item">
+                <a href="">
+                    <span id="user_name">김주형</span> 님 반가워요 ~
+                </a>
+            </li>
+            <li class="navheader_item">
+                <a href="">
+                    로그아웃
+                </a>
+            </li>
+            <li class="navheader_item">
+                <a href="">
+                    설정
+                </a>
+            </li>
+            <li class="navheader_item active" id="nav_notification">
+                <a href="">
+                    <i>
+                        <img src="../../images/icon_notification.svg" alt="알림">
+                    </i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+                <div class="content_container">
+                    <div class="content_wrap_main">
+                        <div class="main_join_area">
+                            <div class="join_form">
+                                <div class="row_group">
+                                    <div class="join_row">
+                                        <div class="form-outline">
+                                            <input type="text" id="typeText" class="form-control" />
+                                            <label class="form-label" for="typeText">업체명</label>
+                                        </div>
+                                    </div>
+                                    <div class="join_row">
+                                        <div class="form-outline">
+                                            <input
+                                              class="form-control"
+                                              id="formControlReadonly"
+                                              type="text"
+                                              value="업체 주소"
+                                              aria-label="readonly input example"
+                                              readonly
+                                            />
+                                            <label class="form-label" for="formControlReadonly">업체 주소</label>
+                                            <button type="button" class="address_search_btn">주소 찾기</button>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row_group">
+                                    <div class="join_row">
+                                        <div class="form-outline">
+                                            <input type="tel" id="typePhone" class="form-control" />
+                                            <label class="form-label" for="typePhone">사업자 연락처</label>
+                                        </div>
+                                    </div>
+                                    <div class="join_row join_name">
+                                        <div class="form-outline">
+                                            <input type="text" id="typeText" class="form-control" />
+                                            <label class="form-label" for="typeText">대표자 성함</label>
+                                        </div>
+            
+                                        <div class="gender_select">
+                                            <div class="btn-group">
+                                                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked />
+                                                <label class="btn btn-secondary" for="option1">남자</label>
+                                              
+                                                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" />
+                                                <label class="btn btn-secondary" for="option2">여자</label>
+                                            </div>
+                                        </div>
+            
+                                        <div class="name_chk">
+                                            <button type="button" class="btn btn-light" data-mdb-ripple-color="dark">본인인증</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row_group">
+                                    <div class="join_row">
+                                        <label for="formFileLg" class="form-label">정비소 대표 이미지 업로드</label>
+                                        <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                                    </div>
+            
+                                    <div class="join_row join_business_hours">
+                                        <select name="business_hours" class="form-select">
+                                            <option value="">평일 영업 시작시간</option>
+                                            <option value="0900">오전 9:00</option>
+                                            <option value="1000">오전 10:00</option>
+                                        </select>
+                                        <span>~</span>
+                                        <select name="business_hours" class="form-select">
+                                            <option value="">평일 영업 종료시간</option>
+                                            <option value="1800">오후 6:00</option>
+                                            <option value="1900">오후 7:00</option>
+                                        </select>
+                                    </div>
+            
+                                    <div class="join_row join_business_hours">
+                                        <select name="business_hours" class="form-select">
+                                            <option value="">평일 영업 시작시간</option>
+                                            <option value="0900">오전 9:00</option>
+                                            <option value="1000">오전 10:00</option>
+                                        </select>
+                                        <span>~</span>
+                                        <select name="business_hours" class="form-select">
+                                            <option value="">평일 영업 종료시간</option>
+                                            <option value="1800">오후 6:00</option>
+                                            <option value="1900">오후 7:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row_group">
+                                    <div class="join_row">
+                                        <select name="workshop_grade" class="form-select">
+                                            <option value="">정비소 분류</option>
+                                            <option value="">자동차 종합 정비업 (1급 공업사)</option>
+                                            <option value="">소형 자동차 정비업 (2급 공업사)</option>
+                                            <option value="">자동차 전문 정비업 (3급 공업사)</option>
+                                            <option value="">원동기 전문 정비업</option>
+                                        </select>
+                                    </div>
+                                    <div class="join_row item_select">
+                                        <div class="item_title">
+                                            정비 항목 선택
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="item_chk_01" />
+                                            <label class="form-check-label" for="item_chk_01">정비</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="item_chk_02" />
+                                            <label class="form-check-label" for="item_chk_02">부품 교체</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="item_chk_03" />
+                                            <label class="form-check-label" for="item_chk_03">점검</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="item_chk_04" />
+                                            <label class="form-check-label" for="item_chk_04">엔진, 미션 수리</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="item_chk_05" />
+                                            <label class="form-check-label" for="item_chk_05">판금 도색</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="item_chk_06" />
+                                            <label class="form-check-label" for="item_chk_06">경정비</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="join_btn_wrap btn_2">
+                                <button type="button" class="btn btn-light" data-mdb-ripple-color="dark">취소</button>
+                                <button type="button" class="btn btn-primary">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_wrap_sub">
+                        <!-- active 클래스 추가 시 오픈 -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../../js/mdb.custom.min.js"></script>
+        <!-- jQuery -->
+<script src="../../js/jquery/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+  <script src="../../js/jquery/tether/dist/js/tether.min.js"></script>
+  <script src="../../js/jquery/bootstrap/dist/js/bootstrap.js"></script>
+<!-- core -->
+  <script src="../../js/jquery/underscore/underscore-min.js"></script>
+  <script src="../../js/jquery/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+  <script src="../../js/jquery/PACE/pace.min.js"></script>
+
+  <script src="../../js/scripts/config.lazyload.js"></script>
+
+  <script src="../../js/scripts/palette.js"></script>
+  <script src="../../js/scripts/ui-load.js"></script>
+  <script src="../../js/scripts/ui-jp.js"></script>
+  <script src="../../js/scripts/ui-include.js"></script>
+  <script src="../../js/scripts/ui-device.js"></script>
+  <script src="../../js/scripts/ui-form.js"></script>
+  <script src="../../js/scripts/ui-nav.js"></script>
+  <script src="../../js/scripts/ui-screenfull.js"></script>
+  <script src="../../js/scripts/ui-scroll-to.js"></script>
+  <script src="../../js/scripts/ui-toggle-class.js"></script>
+
+  <script src="../../js/scripts/app.js"></script>
+
+  <!-- ajax -->
+  <script src="../../js/jquery/jquery-pjax/jquery.pjax.js"></script>
+  <script src="../../js/scripts/ajax.js"></script>
+
+
+  <script src="../../js/common.js"></script>
+<!-- endbuild -->
+
+        <script>
+            $('.nav_list .nav_item').eq(1).addClass('active');
+        </script>
+    </body>
+</html> 

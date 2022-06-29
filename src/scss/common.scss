@@ -1,0 +1,44 @@
+/*
+	common.css
+*/
+
+
+//
+// 미디어 쿼리 MIXIN
+// --------------------------------------------------
+
+
+
+
+// --------------------------------------------------
+
+
+
+// import
+
+@import "reset";
+@import "layout";
+
+
+
+body,
+input,
+textarea,
+select,
+button {
+	font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: auto;
+	color: $primary;
+	@include font-size-6;
+}
+
+.btn {
+	@include font-size-6;
+}
+
+.btn-primary {
+	background-color: $primary;
+    border-color: $primary;
+	color: $bg;
+}
