@@ -802,7 +802,7 @@
 
                         </div>
                     </div>
-                    <div class="content_wrap_sub">
+                    <div class="content_wrap_sub active">
                         <!-- active 클래스 추가 시 오픈 -->
                         <div class="content_sub_area">
                             <button class="content_sub_btn">
@@ -978,6 +978,33 @@
 
         <script>
             $('.nav_list .nav_item').eq(1).addClass('active');
+        </script>
+
+        <script>
+            function mobile_main_start() {
+                if($(window).width() < 768) {
+                    $('.content_wrap_sub').removeClass('active');
+                } else {
+                    $('.content_wrap_sub').addClass('active');
+                }
+            }
+
+            $(document).ready(function () {
+                mobile_main_start();
+            });
+
+            $(window).resize(function() {
+                if(this.resizeTO) {
+                    clearTimeout(this.resizeTO);
+                }
+                this.resizeTO = setTimeout(function() {
+                    $(this).trigger('resizeEnd'); 
+                }, 200);
+            });
+
+            $(window).on('resizeEnd', function() {
+                mobile_main_start();
+            });
         </script>
     </body>
 </html> 
