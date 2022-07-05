@@ -212,3 +212,49 @@ function sub_toggle() {
 function main_calendar_toggle() {
     $('.content_wrap_sub').toggleClass('active');
 }
+
+
+
+
+
+// 알림 영역
+
+
+$('#nav_notification').click(function () {
+    $('.content_wrap_sub').addClass('active');
+    $('.notification_area').addClass('active');
+});
+
+$('.notification_close').click(function () {
+    $('.notification_area').removeClass('active');
+});
+
+
+function notification_empty() {
+    if($('.notification_list .notification_item').length > 0) {
+        $('.notification_body').removeClass('empty');
+        $('#nav_notification').addClass('active');
+    } else {
+        $('.notification_body').addClass('empty');
+        $('#nav_notification').removeClass('active');
+    }
+}
+
+notification_empty();
+
+$('.notification_list').bind('DOMSubtreeModified', function () {
+    notification_empty();
+});
+
+$('.notification_item_close').click(function () {
+    $(this).closest('.notification_item').fadeOut(300, function () {
+        $(this).remove();
+    });
+});
+
+$('.notification_clear').click(function () {
+    $('.notification_item').fadeOut(300, function () {
+        $(this).remove();
+    });
+});
+

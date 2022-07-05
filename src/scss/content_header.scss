@@ -75,8 +75,22 @@
 
 @include mobile {
     .navheader {
-        .navheader_list {
+        padding: 0 20px;
+        justify-content: flex-end;
+
+        .navheader_title {
             display: none;
+        }
+
+        .navheader_list {
+            .navheader_item {
+                padding-left: 15px;
+                padding-right: 15px;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
         }
     }
 }
