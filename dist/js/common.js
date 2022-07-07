@@ -1,3 +1,20 @@
+$('.c_arrow').on('click touch', function(e) {
+
+    e.preventDefault();
+
+    let arrow = $(this);
+
+    if(!arrow.hasClass('animate')) {
+        arrow.addClass('animate');
+        setTimeout(() => {
+            arrow.removeClass('animate');
+        }, 1600);
+    }
+
+});
+
+
+
 $(document).ready(function () {
     $('.feed_btn#feed_comment > a').click(function () {
         if($(this).hasClass('active')) {
